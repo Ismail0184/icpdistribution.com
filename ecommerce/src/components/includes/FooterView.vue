@@ -123,7 +123,7 @@
               </div>
               <div class="col-lg-4 col-12">
                 <div class="copyright">
-                  <p>Designed and Developed by<a href="https://graygrids.com/" rel="nofollow" target="_blank">GrayGrids</a></p>
+                  <p>Designed and Developed by<a href="#" rel="nofollow" target="_blank">ICP</a></p>
                 </div>
               </div>
               <div class="col-lg-4 col-12">

@@ -20,4 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/all-category',[APIController::class,'getAllCategory']);
-Route::get('/all-product',[APIController::class,'getAllProduct']);
+Route::get('/all-sub-category',[APIController::class,'getAllSubCategory']);

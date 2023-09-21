@@ -184,7 +184,7 @@
               <div class="mega-category-menu">
                 <span class="cat-button"><i class="lni lni-menu"></i>All Categories</span>
                 <ul class="sub-category">
-                  <li><router-link :to="{name:'category'}">Electronics <i class="lni lni-chevron-right"></i></router-link>
+                  <li v-for="(category, key) in categories" :key="key"><router-link :to="{name:'category'}">{{category.name}} <i class="lni lni-chevron-right"></i></router-link>
                     <ul class="inner-sub-category">
                       <router-link :to="{name:'product'}">xyz</router-link>
                     </ul>
@@ -272,8 +272,19 @@
 </template>
 
 <script>
+import axios from "axios"
 export default {
-  name: "HeaderView"
+  name: "HeaderView",
+  data(){
+    return {
+      categories : [],
+    }
+  },
+  created() {
+    axios.get("http://127.0.0.1:8000/api/all-category").then(response => {
+          console.log(response.data);
+        });
+  }
 }
 </script>
 

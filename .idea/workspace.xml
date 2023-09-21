@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62c727a9-ffd8-4554-abcc-325c5d03fc5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/components/category/CategoryLeftSection.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/components/category/CategoryPageTitle.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/components/category/CategoryRightSection.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecommerce/src/views/ProductView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/home/TrendingProductView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/home/TrendingProductView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/src/components/includes/HeaderView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/includes/HeaderView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/views/CategoryView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/views/CategoryView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/views/HomeView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +203,7 @@
       <workItem from="1695110893788" duration="3911000" />
       <workItem from="1695115853710" duration="6592000" />
       <workItem from="1695181323415" duration="7834000" />
-      <workItem from="1695268399804" duration="6753000" />
+      <workItem from="1695268399804" duration="13194000" />
     </task>
     <servers />
   </component>

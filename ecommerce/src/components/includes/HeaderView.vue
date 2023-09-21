@@ -181,18 +181,16 @@
         <div class="row align-items-center">
           <div class="col-lg-8 col-md-6 col-12">
             <div class="nav-inner">
-
               <div class="mega-category-menu">
                 <span class="cat-button"><i class="lni lni-menu"></i>All Categories</span>
                 <ul class="sub-category">
                   <li><router-link :to="{name:'category'}">Electronics <i class="lni lni-chevron-right"></i></router-link>
                     <ul class="inner-sub-category">
-                      <router-link :to="{name:'category'}">xyz</router-link>
+                      <router-link :to="{name:'product'}">xyz</router-link>
                     </ul>
                   </li>
                 </ul>
               </div>
-
 
               <nav class="navbar navbar-expand-lg">
                 <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

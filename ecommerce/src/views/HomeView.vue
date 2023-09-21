@@ -28,6 +28,9 @@ export default {
     BlogSectionView,
     BrandsView,
     HomeProductListView,
-    SpecialOfferView, BannerSection, TrendingProductView, FeaturedCategoriesView, HeroAreaView}
+    SpecialOfferView, BannerSection, TrendingProductView, FeaturedCategoriesView, HeroAreaView},
+  created() {
+    document.title = "Home Page"
+  }
 }
 </script>

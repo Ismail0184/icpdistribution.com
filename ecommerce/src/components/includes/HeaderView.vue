@@ -274,22 +274,8 @@
 
 
 <script>
-
-import axios from 'axios'
-
 export default {
   name: 'HeaderView',
-  props: {
-    title: String
-  },
-  data: () => ({
-    users: []
-  }),
-  mounted() {
-    axios.get('http://127.0.0.1:8000/api/all-category').then((res) => {
-      this.users = res.data
-    })
-  }
 }
 </script>
 <style scoped>

@@ -9,7 +9,7 @@
               <div class="col-lg-3 col-md-4 col-12">
                 <div class="footer-logo">
                   <a href="index.html">
-                    <img src="assets/images/logo/white-logo.svg" alt="#">
+                    <img src="/assets/images/logo/white-logo.svg" alt="#">
                   </a>
                 </div>
               </div>
@@ -49,7 +49,7 @@
                     <li><span>Saturday: </span> 10.00 am - 6.00 pm</li>
                   </ul>
                   <p class="mail">
-                    <a href="https://demo.graygrids.com/cdn-cgi/l/email-protection#5b282e2b2b34292f1b2833342b3c29323f2875383436"><span class="__cf_email__" data-cfemail="98ebede8e8f7eaecd8ebf0f7e8ffeaf1fcebb6fbf7f5">[email&#160;protected]</span></a>
+                    <a href="#"><span class="__cf_email__" data-cfemail="98ebede8e8f7eaecd8ebf0f7e8ffeaf1fcebb6fbf7f5">[email&#160;protected]</span></a>
                   </p>
                 </div>
 
@@ -118,7 +118,7 @@
               <div class="col-lg-4 col-12">
                 <div class="payment-gateway">
                   <span>We Accept:</span>
-                  <img src="assets/images/footer/credit-cards-footer.png" alt="#">
+                  <img src="/assets/images/footer/credit-cards-footer.png" alt="#">
                 </div>
               </div>
               <div class="col-lg-4 col-12">

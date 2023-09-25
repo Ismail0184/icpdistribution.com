@@ -13,7 +13,7 @@
         </div>
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 col-12" v-for="(product, key) in categories" :key="key">
+          <div class="col-lg-3 col-md-6 col-12">
             <div class="single-product">
               <div class="product-image">
                 <img src="assets/images/products/product-1.jpg" alt="#">
@@ -24,7 +24,7 @@
               <div class="product-info">
                 <span class="category">Watches</span>
                 <h4 class="title">
-                  <a href="product-grids.html">{{ product.name }}</a>
+                  <a href="product-grids.html"></a>
                 </h4>
                 <ul class="review">
                   <li><i class="lni lni-star-filled"></i></li>
@@ -47,21 +47,8 @@
 </template>
 
 <script>
-import axios from "axios";
 export default {
-  name: "TrendingProductView",
-  data() {
-    return {
-      categories : [],
-    }
-  },
-  created() {
-    axios.get("http://127.0.0.1:8000/api/all-category").then(response => {
-      //this.categories = response.data;
-      this.categories.push(response.data)
-    })
-  }
-
+  name: "TrendingProductView"
 };
 </script>
 <style scoped>

@@ -183,11 +183,10 @@
             <div class="nav-inner">
               <div class="mega-category-menu">
                 <span class="cat-button"><i class="lni lni-menu"></i>All Categories</span>
-
-                <ul class="sub-category" >
-                  <li v-for="user in users" :key="user.id">{{ user.id }}. {{ user.name }} - {{ user.email }}hgk
+                <ul class="sub-category">
+                  <li v-for="(category, key) in categories" :key="key"><router-link :to="{name:'category',params:{'id':category.id}}">{{category.name}} <i class="lni lni-chevron-right"></i></router-link>
                     <ul class="inner-sub-category">
-                      <router-link :to="{name:'product'}">xyz</router-link>
+                      <li v-for="(sub_category, key1) in category.sub_category" :key="key1"><a href="product-grids.html">{{sub_category.name}}</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -274,8 +273,19 @@
 
 
 <script>
+import axios from "axios";
 export default {
   name: 'HeaderView',
+  data() {
+    return {
+      categories : [],
+    }
+  },
+  created() {
+    axios.get("http://127.0.0.1:8000/api/all-category").then(response => {
+      this.categories = response.data;
+    })
+  }
 }
 </script>
 <style scoped>

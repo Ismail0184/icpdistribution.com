@@ -97,10 +97,7 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Products</a>
                 <ul class="dropdown-menu">
-                  <li><a href="services.html">Services Version One</a></li>
-                  <li><a href="services-2.html">Services Version Two</a></li>
-                  <li><a href="services-3.html">Services Version Three</a></li>
-                  <li><a href="services-single.html">Services Single</a></li>
+                  <li v-for="(category, key) in categories" :key="key"><a href="services.html">{{category.name}}</a></li>
                 </ul>
               </li>
               <li class="dropdown">
@@ -175,8 +172,19 @@
 </template>
 
 <script>
+import axios from "axios"
 export default {
-  name: "HeaderView"
+  name: "HeaderView",
+  data() {
+    return {
+      categories : [],
+    }
+  },
+  created() {
+    axios.get("http://127.0.0.1:8000/api/all-category").then(response => {
+      this.categories = response.data
+    })
+  }
 }
 </script>
 

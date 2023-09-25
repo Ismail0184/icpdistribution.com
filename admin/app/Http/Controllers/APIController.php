@@ -9,17 +9,20 @@ use Illuminate\Http\Request;
 
 class APIController extends Controller
 {
+    private $categories,$subCategories, $data = [], $index;
 
     public function getAllCategory()
     {
-        $categories = Category::where('status','1')->orderBy('id','desc')->get(['id','name']);
-        return response()->json(compact('categories'));
-    }
+        $this->categories = Category::where('status','1')->orderBy('id','desc')->get(['id','name']);
+        foreach ($this->categories as $category)
+        {
+            $category->sub_category = SubCategory::where('status','1')->where('category_id',$category->id)->orderBy('id','desc')->get();
 
-    public function getAllSubCategory()
-    {
-        $subCategory = SubCategory::where('status',1)->orderBy('id','desc')->get(['id','name']);
-        return response()->json(compact('subCategory'));
+            /*$this->data[$key]['id'] = $category->id;
+            $this->data[$key]['name'] = $category->name;
+            $this->data[$key]['sub_category'] = $this->subCategories;*/
+        }
+        return response()->json($this->categories);
     }
 
 }

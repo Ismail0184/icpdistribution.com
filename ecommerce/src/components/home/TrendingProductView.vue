@@ -12,7 +12,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-3 col-md-6 col-12">
+
+
+          <div class="col-lg-3 col-md-6 col-12" v-for="item in items" :key="item.id">
 
             <div class="single-product">
               <div class="product-image">
@@ -24,7 +26,7 @@
               <div class="product-info">
                 <span class="category">Watches</span>
                 <h4 class="title">
-                  <a href="product-grids.html">Xiaomi Mi Band 5</a>
+                  <a href="product-grids.html">{{ item.name }}</a>
                 </h4>
                 <ul class="review">
                   <li><i class="lni lni-star-filled"></i></li>
@@ -48,22 +50,27 @@
 </template>
 
 <script>
-import axios from "axios"
+import axios from 'axios';
+
 export default {
   name: "TrendingProductView",
-  data()  {
+  data() {
     return {
-      products : [],
-    }
+      items: [],
+    };
   },
   created() {
-    axios.get("http://127.0.0.1:8000/api/all-category").then( response => {
-      this.products = response.data;
-    })
-  }
-}
+    axios
+        .get('http://127.0.0.1:8000/api/all-category') // Replace with your API endpoint
+        .then((response) => {
+          this.items = response.data;
+        })
+        .catch((error) => {
+          console.error('Error fetching data:', error);
+        });
+  },
+};
 </script>
-
 <style scoped>
 
 </style>

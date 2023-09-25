@@ -51,7 +51,7 @@
                 <ul class="useful-links">
                   <li><router-link to="/">Home</router-link></li>
                   <li><router-link to="/about">About Us</router-link></li>
-                  <li><router-link to="/contact">Contact Us</router-link></li>
+                  <li><router-link to="/">Contact Us</router-link></li>
                 </ul>
               </div>
             </div>
@@ -183,8 +183,9 @@
             <div class="nav-inner">
               <div class="mega-category-menu">
                 <span class="cat-button"><i class="lni lni-menu"></i>All Categories</span>
-                <ul class="sub-category">
-                  <li v-for="(category, key) in categories" :key="key"><router-link :to="{name:'category'}">{{category.name}} <i class="lni lni-chevron-right"></i></router-link>
+
+                <ul class="sub-category" >
+                  <li v-for="user in users" :key="user.id">{{ user.id }}. {{ user.name }} - {{ user.email }}hgk
                     <ul class="inner-sub-category">
                       <router-link :to="{name:'product'}">xyz</router-link>
                     </ul>
@@ -271,23 +272,26 @@
   </div>
 </template>
 
+
 <script>
-import axios from "axios"
+
+import axios from 'axios'
+
 export default {
-  name: "HeaderView",
-  data(){
-    return {
-      categories : [],
-    }
+  name: 'HeaderView',
+  props: {
+    title: String
   },
-  created() {
-    axios.get("http://127.0.0.1:8000/api/all-category").then(response => {
-          console.log(response.data);
-        });
+  data: () => ({
+    users: []
+  }),
+  mounted() {
+    axios.get('http://127.0.0.1:8000/api/all-category').then((res) => {
+      this.users = res.data
+    })
   }
 }
 </script>
-
 <style scoped>
 
 </style>

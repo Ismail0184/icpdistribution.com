@@ -3,12 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="62c727a9-ffd8-4554-abcc-325c5d03fc5a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/public/assets/images/hero/slider-bg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/public/assets/images/hero/slider-bg1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/public/assets/images/hero/slider-bg1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/public/assets/images/hero/slider-bg2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/public/assets/images/hero/slider-bg2.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/home/HeroAreaView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/home/HeroAreaView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/src/components/home/TrendingProductView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/home/TrendingProductView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce/src/components/includes/HeaderView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/includes/HeaderView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +204,8 @@
       <workItem from="1695110893788" duration="3911000" />
       <workItem from="1695115853710" duration="6592000" />
       <workItem from="1695181323415" duration="7834000" />
-      <workItem from="1695268399804" duration="13194000" />
+      <workItem from="1695268399804" duration="18532000" />
+      <workItem from="1695548428655" duration="6127000" />
     </task>
     <servers />
   </component>

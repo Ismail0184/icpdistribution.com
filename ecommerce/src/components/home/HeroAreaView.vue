@@ -8,7 +8,7 @@
 
               <div class="hero-slider">
 
-                <div class="single-slider" style="background-image: url(/assets/images/hero/slider-bg2.webp);">
+                <div class="single-slider" style="background-image: url(/assets/images/hero/slider-bg1.jpg);">
                   <div class="content">
                     <h2><span></span></h2>
                     <p></p>
@@ -20,7 +20,7 @@
                 </div>
 
 
-                <div class="single-slider" style="background-image: url(/assets/images/hero/slider-bg1.webp);">
+                <div class="single-slider" style="background-image: url(/assets/images/hero/slider-bg2.jpeg);">
                   <div class="content">
                     <h2><span></span></h2>
                     <p></p>

@@ -50,10 +50,12 @@ Route::middleware([
     Route::post('/admin/unit/update/{id}',[UnitController::class,'update'])->name('unit.update');
     Route::post('/admin/unit/destroy/{id}',[UnitController::class,'destroy'])->name('unit.destroy');
     //Admin/Product
+    Route::get('/admin/product/get-all-sub-category', [ProductController::class, 'getAllSubCategory'])->name('get-all-sub-category');
     Route::get('/admin/product/',[ProductController::class,'index'])->name('product');
     Route::get('/admin/product/create',[ProductController::class,'create'])->name('product.create');
     Route::post('/admin/product/store',[ProductController::class,'store'])->name('product.store');
     Route::get('/admin/product/edit/{id}',[ProductController::class,'edit'])->name('product.edit');
+    Route::get('/admin/product/show/{id}',[ProductController::class,'show'])->name('product.show');
     Route::post('/admin/product/update/{id}',[ProductController::class,'update'])->name('product.update');
     Route::post('/admin/product/destroy/{id}',[ProductController::class,'destroy'])->name('product.destroy');
     //Admin/Customer

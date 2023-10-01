@@ -16,7 +16,7 @@
                                 <form action="@if(request('id')>0) {{route('subCategory.update', ['id'=>$subCategory->id])}} @else {{route('subCategory.store')}} @endif" method="post" enctype="multipart/form-data">
                                     @csrf
                                     <div class="form-group">
-                                        <label class="col-form-label">Status <span class="required text-danger">*</span></label>
+                                        <label class="col-form-label">Category <span class="required text-danger">*</span></label>
                                         <select class="form-control" name="category_id" required>
                                             <option value="">-- select a category --</option>
                                             @foreach($categories as $category)

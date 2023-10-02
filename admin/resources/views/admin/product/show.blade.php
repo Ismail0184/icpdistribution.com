@@ -51,7 +51,7 @@
                                     <tr>
                                         <th>Long Description</th>
                                         <th>:</th>
-                                        <td>{{$product->long_description}}</td>
+                                        <td>{!! $product->long_description !!}</td>
                                     </tr>
                                     <tr>
                                         <th>Stock Amount</th>

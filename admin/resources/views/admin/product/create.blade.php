@@ -5,6 +5,10 @@
 @endsection
 
 @section('body')
+
+    <script src="//js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
+    <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
+
     <div class="main-content-inner">
         <div class="row">
             <div class="col-lg-6 col-ml-12">
@@ -67,12 +71,12 @@
 
                                     <div class="form-group">
                                         <label for="description">Short Description</label>
-                                        <textarea name="short_description" class="form-control">@if(request('id')>0){{$product->short_description}} @endif</textarea>
+                                        <input type="text" name="short_description" class="form-control" @if(request('id')>0) value="{{$product->short_description}}" @endif />
                                     </div>
 
                                     <div class="form-group">
                                         <label for="description">Long Description</label>
-                                        <textarea name="long_description" class="form-control">@if(request('id')>0){{$product->long_description}} @endif</textarea>
+                                        <textarea name="long_description" cols="30" rows="10" class="form-control">@if(request('id')>0) {!! $product->long_description !!} @endif</textarea>
                                     </div>
 
                                     <div class="form-group">
@@ -97,7 +101,7 @@
 
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Product Other Image</label>
-                                        <input type="file" name="other_image[]" class="form-control">
+                                        <input type="file" name="other_image[]" multiple class="form-control">
                                     </div>
 
                                     @if(request('id')>0)

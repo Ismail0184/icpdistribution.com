@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62c727a9-ffd8-4554-abcc-325c5d03fc5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/resources/views/admin/product/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/Models/Admin/products.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/database/migrations/2023_09_18_113326_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/database/migrations/2023_09_18_113326_create_products_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/product/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/product/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/product/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/subCategory/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/subCategory/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/includes/HeaderView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/includes/HeaderView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/product/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/product/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +203,7 @@
       <workItem from="1695548428655" duration="6127000" />
       <workItem from="1695619555253" duration="5520000" />
       <workItem from="1695628075447" duration="12401000" />
-      <workItem from="1696133360889" duration="12432000" />
+      <workItem from="1696133360889" duration="18053000" />
     </task>
     <servers />
   </component>

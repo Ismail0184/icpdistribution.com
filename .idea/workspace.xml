@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="62c727a9-ffd8-4554-abcc-325c5d03fc5a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/product/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/product/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/product/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/product/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/Http/Controllers/Admin/Website/CarouselController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Http/Controllers/Admin/Website/CarouselController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/database/migrations/2023_09_18_113326_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/database/migrations/2023_09_18_113326_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/website/carousel/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/website/carousel/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/website/carousel/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/website/carousel/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/public/assets/img/assets/img/it-solution/portfolio/44.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,6 +209,7 @@
       <workItem from="1695619555253" duration="5520000" />
       <workItem from="1695628075447" duration="12401000" />
       <workItem from="1696133360889" duration="18053000" />
+      <workItem from="1696218013266" duration="7856000" />
     </task>
     <servers />
   </component>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin\Website;
 
 use App\Http\Controllers\Controller;
+use App\Models\Admin\WebsiteCarousel;
 use Illuminate\Http\Request;
 
 class CarouselController extends Controller
@@ -12,7 +13,8 @@ class CarouselController extends Controller
      */
     public function index()
     {
-        return view('admin.website.carousel.index');
+        $carousels = WebsiteCarousel::all();
+        return view('admin.website.carousel.index',compact('carousels'));
     }
 
     /**
@@ -20,7 +22,7 @@ class CarouselController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.website.carousel.create');
     }
 
     /**
@@ -28,7 +30,8 @@ class CarouselController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        WebsiteCarousel::storeCarousel($request);
+        return redirect('admin/website/carousel/')->with('store_message','A new carousel has been created!!');
     }
 
     /**
@@ -44,7 +47,8 @@ class CarouselController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $carousel = WebsiteCarousel::findOrfail($id);
+        return view('admin.website.carousel.create',compact('carousel'));
     }
 
     /**
@@ -52,7 +56,8 @@ class CarouselController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        WebsiteCarousel::updateCarousel($request, $id);
+        return redirect('admin/website/carousel/')->with('update_message','This carousel (uid='.$id.') has been updated!!');
     }
 
     /**
@@ -60,6 +65,7 @@ class CarouselController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        WebsiteCarousel::destroyCarousel($id);
+        return redirect('admin/website/carousel/')->with('destroy_message','This carousel (uid='.$id.') has been deleted!!');
     }
 }

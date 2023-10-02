@@ -28,6 +28,7 @@ return new class extends Migration
             $table->tinyInteger('hit_count')->default(0);
             $table->tinyInteger('sales_count')->default(0);
             $table->tinyInteger('status')->default(1);
+            $table->integer('show_in_trending')->default(1);
             $table->timestamps();
         });
     }

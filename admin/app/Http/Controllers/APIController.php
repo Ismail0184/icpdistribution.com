@@ -3,13 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\Admin\Category;
+use App\Models\Admin\Product;
 use App\Models\Admin\products;
 use App\Models\Admin\SubCategory;
 use Illuminate\Http\Request;
 
 class APIController extends Controller
 {
-    private $categories,$subCategories, $data = [], $index;
+    private $categories,$subCategories, $data = [], $index, $products;
 
     public function getAllCategory()
     {
@@ -23,6 +24,12 @@ class APIController extends Controller
             $this->data[$key]['sub_category'] = $this->subCategories;*/
         }
         return response()->json($this->categories);
+    }
+
+    public function getAllProducts()
+    {
+        $this->products = Product::where('status',1)->get();
+        return response()->json($this->products);
     }
 
 }

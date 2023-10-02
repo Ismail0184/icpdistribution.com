@@ -22,3 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/all-category',[APIController::class,'getAllCategory']);
 Route::get('/all-sub-category',[APIController::class,'getAllSubCategory']);
 Route::get('/all-products',[APIController::class,'getAllProducts']);
+Route::get('/carousel',[APIController::class,'getCarousel']);
+Route::get('/carousel-active',[APIController::class,'getCarouselActive']);

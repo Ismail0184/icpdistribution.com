@@ -6,6 +6,7 @@ use App\Models\Admin\Category;
 use App\Models\Admin\Product;
 use App\Models\Admin\products;
 use App\Models\Admin\SubCategory;
+use App\Models\Admin\WebsiteCarousel;
 use Illuminate\Http\Request;
 
 class APIController extends Controller
@@ -30,6 +31,15 @@ class APIController extends Controller
     {
         $this->products = Product::where('status',1)->get();
         return response()->json($this->products);
+    }
+
+    public function getCarouselActive()
+    {
+        return response()->json(WebsiteCarousel::where('status',1)->where('position','active')->orderBy('serial','asc')->get());
+    }
+    public function getCarousel()
+    {
+        return response()->json(WebsiteCarousel::where('status',1)->where('position','inactive')->orderBy('serial','asc')->get());
     }
 
 }

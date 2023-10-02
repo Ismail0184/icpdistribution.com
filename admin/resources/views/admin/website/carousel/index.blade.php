@@ -23,6 +23,7 @@
                                 <thead class="text-capitalize">
                                 <tr>
                                     <th style="width: 1%">#</th>
+                                    <th style="width: 1%">Serial</th>
                                     <th>Headline</th>
                                     <th>Description</th>
                                     <th>Image</th>
@@ -34,6 +35,7 @@
                                 @foreach($carousels as $carousel)
                                     <tr>
                                         <td>{{$loop->iteration}}</td>
+                                        <td>{{$carousel->serial}}</td>
                                         <td class="text-left">{!! $carousel->headline !!}</td>
                                         <td class="text-left">{{$carousel->details}}</td>
                                         <td><img src="{{asset($carousel->image)}}" alt="" height="50" width="70"/></td>

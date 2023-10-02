@@ -61,6 +61,7 @@
                             </ul>
                         </li>
 
+                        <li><a href="{{route('carousel')}}"><i class="ti-pie-chart"></i><span>Carousel</span></a></li>
                         <li><a href="{{route('category')}}"><i class="ti-pie-chart"></i><span>Category</span></a></li>
                         <li><a href="{{route('subCategory')}}"><i class="ti-palette"></i><span>Sub Category</span></a></li>
                         <li><a href="{{route('brand')}}"><i class="ti-slice"></i><span>Brand</span></a></li>

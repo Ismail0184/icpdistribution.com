@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62c727a9-ffd8-4554-abcc-325c5d03fc5a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/resources/views/admin/carousel/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/resources/views/admin/carousel/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/Http/Controllers/Admin/Website/CarouselController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Http/Controllers/Admin/Website/CarouselController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/database/migrations/2023_09_18_113326_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/database/migrations/2023_09_18_113326_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/Models/Admin/WebsiteCarousel.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Models/Admin/WebsiteCarousel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/database/migrations/2023_10_02_043658_create_website_carousels_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/database/migrations/2023_10_02_043658_create_website_carousels_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/website/carousel/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/website/carousel/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/website/carousel/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/website/carousel/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/public/assets/img/assets/img/it-solution/portfolio/44.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/node_modules/.cache/eslint/56c2a6ea.json" beforeDir="false" afterPath="$PROJECT_DIR$/website/node_modules/.cache/eslint/56c2a6ea.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/components/home/BannerView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/home/BannerView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/views/MediaView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/views/MediaView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +215,8 @@
       <workItem from="1695619555253" duration="5520000" />
       <workItem from="1695628075447" duration="12401000" />
       <workItem from="1696133360889" duration="18053000" />
-      <workItem from="1696218013266" duration="7856000" />
+      <workItem from="1696218013266" duration="13450000" />
+      <workItem from="1696239524845" duration="6324000" />
     </task>
     <servers />
   </component>

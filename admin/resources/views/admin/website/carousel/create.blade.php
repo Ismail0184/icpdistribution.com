@@ -37,6 +37,14 @@
                                         @if(request('id')>0) <img src="{{asset($carousel->image)}}" alt="" height="100" width="130"/> @endif
                                     </div>
 
+                                    <div class="form-group">
+                                        <label class="col-form-label">Position of Carousel <span class="required text-danger">*</span></label>
+                                        <select class="form-control" name="position">
+                                            <option value="active" @if(request('id')>0) @if($carousel->position=='active') selected @endif @endif>Active</option>
+                                            <option value="inactive" @if(request('id')>0) @if($carousel->position=='inactive') selected @endif @endif>Inactive</option>
+                                        </select>
+                                    </div>
+
                                     @if(request('id')>0)
                                         <div class="form-group">
                                             <label class="col-form-label">Status <span class="required text-danger">*</span></label>
@@ -47,7 +55,7 @@
                                         </div>
                                     @endif
 
-                                    <a href="{{route('subCategory')}}" type="submit" class="btn btn-danger mt-4 pr-4 pl-4 text-white">Cancel</a>
+                                    <a href="{{route('admin.web.carousel.view')}}" type="submit" class="btn btn-danger mt-4 pr-4 pl-4 text-white">Cancel</a>
                                     <button type="submit" class="btn btn-primary mt-4 pr-4 pl-4">@if(request('id')>0) Update @else Submit @endif</button>
                                 </form>
                             </div>

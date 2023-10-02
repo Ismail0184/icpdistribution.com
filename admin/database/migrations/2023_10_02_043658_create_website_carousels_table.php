@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('details');
             $table->string('image');
             $table->integer('status')->default(1);
+            $table->string('position')->nullable();
             $table->integer('entry_by')->nullable();
             $table->integer('update_by')->nullable();
             $table->timestamps();

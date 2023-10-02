@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\UnitController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\Website\CarouselController;
+use App\Http\Controllers\Admin\EcommerceCarouselController;
 
 
 
@@ -19,6 +20,14 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::get('/dashboard',[HomeController::class,'dashboard'])->name('dashboard');
+
+    //Admin/Carousel
+    Route::get('/admin/carousel/',[EcommerceCarouselController::class,'index'])->name('carousel');
+    Route::get('/admin/carousel/create',[EcommerceCarouselController::class,'create'])->name('carousel.create');
+    Route::post('/admin/carousel/store',[EcommerceCarouselController::class,'store'])->name('carousel.store');
+    Route::get('/admin/carousel/edit/{id}',[EcommerceCarouselController::class,'edit'])->name('carousel.edit');
+    Route::post('/admin/carousel/update/{id}',[EcommerceCarouselController::class,'update'])->name('carousel.update');
+    Route::post('/admin/carousel/destroy/{id}',[EcommerceCarouselController::class,'destroy'])->name('carousel.destroy');
 
     //Admin/Category
     Route::get('/admin/category/',[CategoryController::class,'index'])->name('category');

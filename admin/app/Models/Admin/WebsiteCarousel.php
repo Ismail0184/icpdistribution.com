@@ -22,11 +22,13 @@ class WebsiteCarousel extends Model
 
     public static function storeCarousel($request)
     {
-        self::$carousel = new WebsiteCarousel();
-        self::$carousel->headline = $request->headline;
-        self::$carousel->details = $request->details;
-        self::$carousel->image = self::$carousel->image = self::getImageUrl($request);
-        self::$carousel->entry_by = $request->entry_by;
+        self::$carousel             = new WebsiteCarousel();
+        self::$carousel->serial     = $request->serial;
+        self::$carousel->headline   = $request->headline;
+        self::$carousel->details    = $request->details;
+        self::$carousel->image      = self::$carousel->image = self::getImageUrl($request);
+        self::$carousel->entry_by   = $request->entry_by;
+        self::$carousel->position   = $request->position;
         self::$carousel->save();
         return self::$carousel;
     }
@@ -46,11 +48,13 @@ class WebsiteCarousel extends Model
         {
             self::$imageUrl = self::$carousel->image;
         }
-        self::$carousel->headline = $request->headline;
-        self::$carousel->details = $request->details;
-        self::$carousel->image = self::$imageUrl;
-        self::$carousel->update_by = $request->entry_by;
-        self::$carousel->status = $request->status;
+        self::$carousel->serial     = $request->serial;
+        self::$carousel->headline   = $request->headline;
+        self::$carousel->details    = $request->details;
+        self::$carousel->image      = self::$imageUrl;
+        self::$carousel->update_by  = $request->entry_by;
+        self::$carousel->status     = $request->status;
+        self::$carousel->position   = $request->position;
         self::$carousel->save();
     }
 

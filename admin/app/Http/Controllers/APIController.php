@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Admin\Category;
+use App\Models\Admin\EcommerceCarousel;
 use App\Models\Admin\Product;
 use App\Models\Admin\products;
 use App\Models\Admin\SubCategory;
@@ -15,14 +16,12 @@ class APIController extends Controller
 
     public function getAllCategory()
     {
-        $this->categories = Category::where('status','1')->orderBy('id','desc')->get(['id','name']);
+        $this->categories = Category::where('status','1')->orderBy('id','desc')->get(['id','name','image']);
         foreach ($this->categories as $category)
         {
             $category->sub_category = SubCategory::where('status','1')->where('category_id',$category->id)->orderBy('id','desc')->get();
+            $category->image = asset($category->image);
 
-            /*$this->data[$key]['id'] = $category->id;
-            $this->data[$key]['name'] = $category->name;
-            $this->data[$key]['sub_category'] = $this->subCategories;*/
         }
         return response()->json($this->categories);
     }
@@ -30,6 +29,22 @@ class APIController extends Controller
     public function getAllProducts()
     {
         $this->products = Product::where('status',1)->get();
+        foreach ($this->products as $product)
+        {
+            $product->category  = $product->category;
+            $product->image     = asset($product->image);
+        }
+        return response()->json($this->products);
+    }
+
+    public function getTrendingProducts()
+    {
+        $this->products = Product::where('status',1)->where('show_in_trending',1)->get();
+        foreach ($this->products as $product)
+        {
+            $product->category  = $product->category;
+            $product->image     = asset($product->image);
+        }
         return response()->json($this->products);
     }
 
@@ -40,6 +55,11 @@ class APIController extends Controller
     public function getCarousel()
     {
         return response()->json(WebsiteCarousel::where('status',1)->where('position','inactive')->orderBy('serial','asc')->get());
+    }
+
+    public function getCarouselEcommerce()
+    {
+        return response()->json(EcommerceCarousel::where('status',1)->orderBy('serial','asc')->get());
     }
 
 }

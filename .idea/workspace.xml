@@ -2,20 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62c727a9-ffd8-4554-abcc-325c5d03fc5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/resources/views/admin/carousel/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/resources/views/admin/carousel/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/Models/Admin/WebsiteCarousel.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Models/Admin/WebsiteCarousel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/database/migrations/2023_10_02_043658_create_website_carousels_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/database/migrations/2023_10_02_043658_create_website_carousels_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/website/carousel/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/website/carousel/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/website/carousel/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/website/carousel/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/Models/Admin/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Models/Admin/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/Models/Admin/EcommerceCarousel.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Models/Admin/EcommerceCarousel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/public/assets/website/carousel/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/public/assets/website/carousel/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/carousel/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/carousel/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/category/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/category/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/category/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/product/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/node_modules/.cache/eslint/56c2a6ea.json" beforeDir="false" afterPath="$PROJECT_DIR$/website/node_modules/.cache/eslint/56c2a6ea.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/home/BannerView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/home/BannerView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/views/MediaView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/views/MediaView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/public/assets/images/hero/slider-bg2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/public/assets/images/hero/slider-bg2.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/home/BlogSectionView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/home/BrandsView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/home/FeaturedCategoriesView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/home/FeaturedCategoriesView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/home/HeroAreaView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/home/HeroAreaView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/home/TrendingProductView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/home/TrendingProductView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/includes/HeaderView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/includes/HeaderView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/views/HomeView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +224,10 @@
       <workItem from="1695628075447" duration="12401000" />
       <workItem from="1696133360889" duration="18053000" />
       <workItem from="1696218013266" duration="13450000" />
-      <workItem from="1696239524845" duration="6324000" />
+      <workItem from="1696239524845" duration="8015000" />
+      <workItem from="1696313905469" duration="2988000" />
+      <workItem from="1696327613162" duration="3979000" />
+      <workItem from="1696392106835" duration="10626000" />
     </task>
     <servers />
   </component>

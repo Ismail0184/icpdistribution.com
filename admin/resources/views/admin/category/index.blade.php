@@ -36,7 +36,7 @@
                             <td>{{$loop->iteration}}</td>
                             <td class="text-left">{{$category->name}}</td>
                             <td class="text-left">{{$category->description}}</td>
-                            <td></td>
+                            <td><img src="{{asset($category->image)}}" alt="" height="50" width="50"/></td>
                             <td>
                                 @if($category->status == '1') <span class="badge badge-success">Active</span>
                                 @elseif($category->status == '0') <span class="badge badge-danger">Inactive</span>

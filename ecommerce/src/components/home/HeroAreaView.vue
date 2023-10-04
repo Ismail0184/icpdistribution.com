@@ -5,10 +5,9 @@
         <div class="row">
           <div class="col-lg-8 col-12 custom-padding-right">
             <div class="slider-head">
-
               <div class="hero-slider">
 
-                <div class="single-slider" style="background-image: url(/assets/images/hero/slider-bg1.jpg);">
+                <div class="single-slider" style="background-image: url(/assets/images/hero/slider-bg1.jpg);" >
                   <div class="content">
                     <h2><span></span></h2>
                     <p></p>
@@ -18,28 +17,25 @@
                     </div>
                   </div>
                 </div>
-
-
-                <div class="single-slider" style="background-image: url(/assets/images/hero/slider-bg2.jpeg);">
+                <div class="single-slider" style="background-image: url(/assets/images/hero/slider-bg2.png);">
                   <div class="content">
-                    <h2><span></span></h2>
+                    <h2><span></span>
+                    </h2>
                     <p></p>
-                    <h3><span></span></h3>
+                    <h3></h3>
                     <div class="button">
-                      <!--router-link to="/category-product" class="btn">Shop Now</router-link-->
+                      <a href="product-grids.html" class="btn"></a>
                     </div>
                   </div>
                 </div>
-
               </div>
-
             </div>
           </div>
           <div class="col-lg-4 col-12">
             <div class="row">
               <div class="col-lg-12 col-md-6 col-12 md-custom-padding">
 
-                <div class="hero-small-banner" style="background-image: url('assets/images/hero/slider-bnr.jpg');">
+                <div class="hero-small-banner" style="background-image: url('/assets/images/hero/slider-bnr.jpg');">
                   <div class="content">
                     <h2>
                       <span>New line required</span>
@@ -73,6 +69,7 @@
 
 <script>
 import {tns} from 'tiny-slider/src/tiny-slider';
+import axios from "axios";
 export default {
   name: "HeroAreaView",
   mounted() {
@@ -87,6 +84,16 @@ export default {
       nav:false,
       controls:true,
       controlsText:['<i class="lni lni-chevron-left"></i>','<i class="lni lni-chevron-right"></i>']
+    })
+  },
+  data(){
+    return{
+      carousels : [],
+    }
+  },
+  created() {
+    axios.get('http://127.0.0.1:8000/api/carousel-ecommerce').then(response => {
+      this.carousels = response.data
     })
   }
 }

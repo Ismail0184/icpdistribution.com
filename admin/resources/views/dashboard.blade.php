@@ -14,11 +14,10 @@ Admin Panel
                             <div class="icon"><i class="fa fa-btc"></i></div>
                             <div class="s-report-title d-flex justify-content-between">
                                 <h4 class="header-title mb-0">Products</h4>
-                                <p>24 H</p>
                             </div>
                             <div class="d-flex justify-content-between pb-2">
-                                <h2>987</h2>
-                                <span>- 45.87</span>
+                                <h2>{{$totalProducts}}</h2>
+                                <span></span>
                             </div>
                         </div>
                         <canvas id="coin_sales1" height="100"></canvas>
@@ -30,11 +29,10 @@ Admin Panel
                             <div class="icon"><i class="fa fa-btc"></i></div>
                             <div class="s-report-title d-flex justify-content-between">
                                 <h4 class="header-title mb-0">Customers</h4>
-                                <p>24 H</p>
                             </div>
                             <div class="d-flex justify-content-between pb-2">
-                                <h2>79</h2>
-                                <span>- 45.87</span>
+                                <h2>{{$totalCustomers}}</h2>
+                                <span></span>
                             </div>
                         </div>
                         <canvas id="coin_sales2" height="100"></canvas>
@@ -46,11 +44,11 @@ Admin Panel
                             <div class="icon"><i class="fa fa-eur"></i></div>
                             <div class="s-report-title d-flex justify-content-between">
                                 <h4 class="header-title mb-0">Orders</h4>
-                                <p>24 H</p>
+                                <p>In Values</p>
                             </div>
                             <div class="d-flex justify-content-between pb-2">
-                                <h2>4567809,987</h2>
-                                <span>- 45.87</span>
+                                <h2>{{$totalOrders}}</h2>
+                                <span>4537459.87</span>
                             </div>
                         </div>
                         <canvas id="coin_sales3" height="100"></canvas>

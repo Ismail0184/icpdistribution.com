@@ -28,6 +28,7 @@
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Image</label>
                                         <input type="file" name="image" class="form-control">
+                                        @if(request('id')>0) <img src="{{asset($category->image)}}" alt="" height="80" width="80"/> @endif
                                     </div>
 
                                     @if(request('id')>0)

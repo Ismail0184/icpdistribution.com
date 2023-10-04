@@ -15,7 +15,7 @@ class EcommerceCarousel extends Model
     {
         self::$image        = $request->file('image');
         self::$imageName    = self::$image->getClientOriginalName();
-        self::$directory    = 'assets/website/carousel/';
+        self::$directory    = 'assets/ecommerce/carousel/';
         self::$image->move(self::$directory, self::$imageName);
         return self::$directory.self::$imageName;
     }

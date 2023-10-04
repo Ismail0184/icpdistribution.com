@@ -24,3 +24,5 @@ Route::get('/all-sub-category',[APIController::class,'getAllSubCategory']);
 Route::get('/all-products',[APIController::class,'getAllProducts']);
 Route::get('/carousel',[APIController::class,'getCarousel']);
 Route::get('/carousel-active',[APIController::class,'getCarouselActive']);
+Route::get('/carousel-ecommerce',[APIController::class,'getCarouselEcommerce']);
+Route::get('/trending-products',[APIController::class,'getTrendingProducts']);

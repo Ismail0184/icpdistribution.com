@@ -6,113 +6,21 @@
           <div class="col-12">
             <div class="section-title">
               <h2>Featured Categories</h2>
-              <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                suffered alteration in some form.</p>
+              <p></p>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-md-6 col-12">
-
+          <div class="col-lg-4 col-md-6 col-12" v-for="(category , key) in FeaturedCategories" :key="key">
             <div class="single-category">
-              <h3 class="heading">TV & Audios</h3>
+              <h3 class="heading">{{category.name}}</h3>
               <ul>
-                <li><a href="product-grids.html">Smart Television</a></li>
-                <li><a href="product-grids.html">QLED TV</a></li>
-                <li><a href="product-grids.html">Audios</a></li>
-                <li><a href="product-grids.html">Headphones</a></li>
-                <li><a href="product-grids.html">View All</a></li>
+                <li v-for="(sub_category, key1) in category.sub_category" :key="key1"><a href="product-grids.html">{{sub_category.name}}</a></li>
               </ul>
               <div class="images">
-                <img src="assets/images/featured-categories/fetured-item-1.png" alt="#">
+                <img :src="category.image" alt="Category Image" height="220" width="200">
               </div>
             </div>
-
-          </div>
-          <div class="col-lg-4 col-md-6 col-12">
-
-            <div class="single-category">
-              <h3 class="heading">Desktop & Laptop</h3>
-              <ul>
-                <li><a href="product-grids.html">Smart Television</a></li>
-                <li><a href="product-grids.html">QLED TV</a></li>
-                <li><a href="product-grids.html">Audios</a></li>
-                <li><a href="product-grids.html">Headphones</a></li>
-                <li><a href="product-grids.html">View All</a></li>
-              </ul>
-              <div class="images">
-                <img src="assets/images/featured-categories/fetured-item-2.png" alt="#">
-              </div>
-            </div>
-
-          </div>
-          <div class="col-lg-4 col-md-6 col-12">
-
-            <div class="single-category">
-              <h3 class="heading">Cctv Camera</h3>
-              <ul>
-                <li><a href="product-grids.html">Smart Television</a></li>
-                <li><a href="product-grids.html">QLED TV</a></li>
-                <li><a href="product-grids.html">Audios</a></li>
-                <li><a href="product-grids.html">Headphones</a></li>
-                <li><a href="product-grids.html">View All</a></li>
-              </ul>
-              <div class="images">
-                <img src="assets/images/featured-categories/fetured-item-3.png" alt="#">
-              </div>
-            </div>
-
-          </div>
-          <div class="col-lg-4 col-md-6 col-12">
-
-            <div class="single-category">
-              <h3 class="heading">Dslr Camera</h3>
-              <ul>
-                <li><a href="product-grids.html">Smart Television</a></li>
-                <li><a href="product-grids.html">QLED TV</a></li>
-                <li><a href="product-grids.html">Audios</a></li>
-                <li><a href="product-grids.html">Headphones</a></li>
-                <li><a href="product-grids.html">View All</a></li>
-              </ul>
-              <div class="images">
-                <img src="assets/images/featured-categories/fetured-item-4.png" alt="#">
-              </div>
-            </div>
-
-          </div>
-          <div class="col-lg-4 col-md-6 col-12">
-
-            <div class="single-category">
-              <h3 class="heading">Smart Phones</h3>
-              <ul>
-                <li><a href="product-grids.html">Smart Television</a></li>
-                <li><a href="product-grids.html">QLED TV</a></li>
-                <li><a href="product-grids.html">Audios</a></li>
-                <li><a href="product-grids.html">Headphones</a></li>
-                <li><a href="product-grids.html">View All</a></li>
-              </ul>
-              <div class="images">
-                <img src="assets/images/featured-categories/fetured-item-5.png" alt="#">
-              </div>
-            </div>
-
-          </div>
-          <div class="col-lg-4 col-md-6 col-12">
-
-            <div class="single-category">
-              <h3 class="heading">Game Console</h3>
-              <ul>
-                <li><a href="product-grids.html">Smart Television</a></li>
-                <li><a href="product-grids.html">QLED TV</a></li>
-                <li><a href="product-grids.html">Audios</a></li>
-                <li><a href="product-grids.html">Headphones</a></li>
-                <li><a href="product-grids.html">View All</a></li>
-              </ul>
-              <div class="images">
-                <img src="assets/images/featured-categories/fetured-item-6.png" alt="#">
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
@@ -121,8 +29,20 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
-  name: "FeaturedCategoriesView"
+  name: "FeaturedCategoriesView",
+  data() {
+    return {
+      FeaturedCategories : [],
+    }
+  },
+  created() {
+    axios.get("http://127.0.0.1:8000/api/all-category").then(response => {
+      this.FeaturedCategories = response.data,
+      console.log(response.data);
+    })
+  }
 }
 </script>
 

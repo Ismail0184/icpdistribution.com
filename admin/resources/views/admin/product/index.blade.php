@@ -23,10 +23,10 @@
                                 <thead class="text-capitalize">
                                 <tr>
                                     <th style="width: 1%">#</th>
+                                    <th>Code</th>
                                     <th>Name</th>
-                                    <th>Description</th>
-                                    <th>Image</th>
                                     <th>Category</th>
+                                    <th>Image</th>
                                     <th>Status</th>
                                     <th style="width: 15%">Option</th>
                                 </tr>
@@ -35,10 +35,10 @@
                                 @foreach($products as $product)
                                     <tr>
                                         <td>{{$loop->iteration}}</td>
+                                        <td class="text-left">{{$product->code}}</td>
                                         <td class="text-left">{{$product->name}}</td>
-                                        <td class="text-left">{{$product->description}}</td>
-                                        <td></td>
                                         <td>{{$product->category->name}}</td>
+                                        <td><img src="{{asset($product->image)}}" width="50" height="50"></td>
                                         <td>
                                             @if($product->status == '1') <span class="badge badge-success">Active</span>
                                             @elseif($product->status == '0') <span class="badge badge-danger">Inactive</span>

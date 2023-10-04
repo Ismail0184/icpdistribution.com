@@ -38,7 +38,7 @@
                                         <td>{{$carousel->serial}}</td>
                                         <td class="text-left">{!! $carousel->headline !!}</td>
                                         <td class="text-left">{{$carousel->details}}</td>
-                                        <td><img src="{{asset($carousel->image)}}" alt="" height="50" width="70"/></td>
+                                        <td><img src="{{asset($carousel->image)}}" alt="" height="50" width="70" /></td>
                                         <td>
                                             @if($carousel->status == '1') <span class="badge badge-success">Active</span>
                                             @elseif($carousel->status == '0') <span class="badge badge-danger">Inactive</span>

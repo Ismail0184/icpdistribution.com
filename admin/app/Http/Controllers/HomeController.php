@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Admin\Product;
 use Illuminate\Http\Request;
 use function Psy\bin;
 
@@ -20,7 +21,10 @@ class HomeController extends Controller
      */
     public function dashboard()
     {
-        return view('dashboard');
+        $totalProducts = Product::where('status',1)->count();
+        $totalCustomers = Product::where('status',1)->count();
+        $totalOrders = Product::where('status',1)->count();
+        return view('dashboard',compact(['totalProducts','totalCustomers','totalOrders']));
     }
 
     /**

@@ -27,6 +27,7 @@
                                     <th>Name</th>
                                     <th>Category</th>
                                     <th>Image</th>
+                                    <th>Trending</th>
                                     <th>Status</th>
                                     <th style="width: 15%">Option</th>
                                 </tr>
@@ -39,6 +40,11 @@
                                         <td class="text-left">{{$product->name}}</td>
                                         <td>{{$product->category->name}}</td>
                                         <td><img src="{{asset($product->image)}}" width="50" height="50"></td>
+                                        <td>
+                                            @if($product->show_in_trending == '1') <span class="badge badge-success">On</span>
+                                            @elseif($product->show_in_trending == '0') <span class="badge badge-danger">Off</span>
+                                            @endif
+                                        </td>
                                         <td>
                                             @if($product->status == '1') <span class="badge badge-success">Active</span>
                                             @elseif($product->status == '0') <span class="badge badge-danger">Inactive</span>

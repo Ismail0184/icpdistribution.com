@@ -4,26 +4,10 @@
     <list default="true" id="62c727a9-ffd8-4554-abcc-325c5d03fc5a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/Models/Admin/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Models/Admin/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/Models/Admin/EcommerceCarousel.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Models/Admin/EcommerceCarousel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/public/assets/website/carousel/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/public/assets/website/carousel/9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/carousel/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/carousel/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/category/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/category/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/category/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/Models/Admin/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Models/Admin/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/product/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/product/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/product/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/public/assets/images/hero/slider-bg2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/public/assets/images/hero/slider-bg2.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/home/BlogSectionView.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/home/BrandsView.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/home/FeaturedCategoriesView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/home/FeaturedCategoriesView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/home/HeroAreaView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/home/HeroAreaView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/home/TrendingProductView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/home/TrendingProductView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/includes/HeaderView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/includes/HeaderView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/views/HomeView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/home/SpecialOfferView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/home/SpecialOfferView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +211,7 @@
       <workItem from="1696239524845" duration="8015000" />
       <workItem from="1696313905469" duration="2988000" />
       <workItem from="1696327613162" duration="3979000" />
-      <workItem from="1696392106835" duration="10626000" />
+      <workItem from="1696392106835" duration="13888000" />
     </task>
     <servers />
   </component>

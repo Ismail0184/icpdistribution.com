@@ -6,8 +6,7 @@
           <div class="col-12">
             <div class="section-title">
               <h2>Special Offer</h2>
-              <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                suffered alteration in some form.</p>
+              <p></p>
             </div>
           </div>
         </div>

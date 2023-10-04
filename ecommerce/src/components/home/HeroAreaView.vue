@@ -6,7 +6,6 @@
           <div class="col-lg-8 col-12 custom-padding-right">
             <div class="slider-head">
               <div class="hero-slider">
-
                 <div class="single-slider" style="background-image: url(/assets/images/hero/slider-bg1.jpg);" >
                   <div class="content">
                     <h2><span></span></h2>

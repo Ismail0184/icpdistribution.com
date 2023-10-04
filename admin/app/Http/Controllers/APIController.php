@@ -16,10 +16,10 @@ class APIController extends Controller
 
     public function getAllCategory()
     {
-        $this->categories = Category::where('status','1')->orderBy('id','desc')->get(['id','name','image']);
+        $this->categories = Category::where('status','1')->orderBy('id','asc')->get(['id','name','image']);
         foreach ($this->categories as $category)
         {
-            $category->sub_category = SubCategory::where('status','1')->where('category_id',$category->id)->orderBy('id','desc')->get();
+            $category->sub_category = SubCategory::where('status','1')->where('category_id',$category->id)->orderBy('id','asc')->get();
             $category->image = asset($category->image);
 
         }

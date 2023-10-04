@@ -34,6 +34,7 @@ class Product extends Model
         self::$product->stock_amount = $request->stock_amount;
         self::$product->regular_price = $request->regular_price;
         self::$product->selling_price = $request->selling_price;
+        self::$product->show_in_trending = $request->show_in_trending;
         self::$product->image = self::getImageUrl($request);
         self::$product->save();
         return self::$product;
@@ -65,6 +66,7 @@ class Product extends Model
         self::$product->stock_amount = $request->stock_amount;
         self::$product->regular_price = $request->regular_price;
         self::$product->selling_price = $request->selling_price;
+        self::$product->show_in_trending = $request->show_in_trending;
         self::$product->image = self::$imageUrl;
         self::$product->save();
     }

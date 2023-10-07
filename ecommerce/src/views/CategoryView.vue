@@ -20,11 +20,13 @@
 import CategoryPageTitle from "@/components/category/CategoryPageTitle";
 import CategoryLeftSection from "@/components/category/CategoryLeftSection";
 import CategoryRightSection from "@/components/category/CategoryRightSection";
+
 export default {
   name: "CategoryView",
   components: {CategoryRightSection, CategoryLeftSection, CategoryPageTitle},
   created() {
-    document.title = "Category Page"
+    document.title = "Category Wise Product";
+
   }
 }
 </script>

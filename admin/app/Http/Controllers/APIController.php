@@ -7,12 +7,13 @@ use App\Models\Admin\EcommerceCarousel;
 use App\Models\Admin\Product;
 use App\Models\Admin\products;
 use App\Models\Admin\SubCategory;
+use App\Models\Admin\WebsiteBlog;
 use App\Models\Admin\WebsiteCarousel;
 use Illuminate\Http\Request;
 
 class APIController extends Controller
 {
-    private $categories,$subCategories, $data = [], $index, $products;
+    private $categories,$subCategories, $blogs, $index, $products;
 
     public function getAllCategory()
     {
@@ -60,6 +61,26 @@ class APIController extends Controller
     public function getCarouselEcommerce()
     {
         return response()->json(EcommerceCarousel::where('status',1)->orderBy('serial','asc')->get());
+    }
+
+    public function getCategoryProduct($id)
+    {
+        $this->products = Product::where('category_id',$id)->get();
+        foreach ($this->products as $product)
+        {
+            $product->image     = asset($product->image);
+        }
+        return response()->json($this->products);
+    }
+
+    public function getBlogs()
+    {
+        $this->blogs = WebsiteBlog::where('status',1)->limit(3)->get();
+        foreach ($this->blogs as $blog)
+        {
+            $blog->image = asset($blog->image);
+        }
+        return response()->json($this->blogs);
     }
 
 }

@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62c727a9-ffd8-4554-abcc-325c5d03fc5a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/resources/views/admin/website/blog/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/resources/views/admin/website/blog/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/src/components/home/BlogAreaView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/Models/Admin/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Models/Admin/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/product/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/product/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/product/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/home/SpecialOfferView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/home/SpecialOfferView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/category/CategoryRightSection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/category/CategoryRightSection.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce/src/views/CategoryView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/views/CategoryView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/node_modules/.cache/eslint/56c2a6ea.json" beforeDir="false" afterPath="$PROJECT_DIR$/website/node_modules/.cache/eslint/56c2a6ea.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/components/home/AboutAreaView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/home/AboutAreaView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/components/includes/FooterView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/includes/FooterView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/components/includes/HeaderView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/includes/HeaderView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/views/HomeView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +221,9 @@
       <workItem from="1696239524845" duration="8015000" />
       <workItem from="1696313905469" duration="2988000" />
       <workItem from="1696327613162" duration="3979000" />
-      <workItem from="1696392106835" duration="13888000" />
+      <workItem from="1696392106835" duration="17903000" />
+      <workItem from="1696478526130" duration="12395000" />
+      <workItem from="1696652227136" duration="1728000" />
     </task>
     <servers />
   </component>

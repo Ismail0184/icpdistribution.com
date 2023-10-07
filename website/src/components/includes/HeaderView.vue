@@ -122,20 +122,19 @@
           <div class="widget">
             <img src="/assets/img/logo.png" alt="Logo">
             <p>
-              Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now easy eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may purse means few blind.
-            </p>
+              ICP Distribution Company is the pioneer and largest Distributor of Global Manufacturing Companies such as - Robert BOSCH (bangladesh) Limited, Believe Pte Ltd and more.            </p>
           </div>
           <div class="widget contact address">
             <div>
               <ul>
                 <li>
-                  <div class="content"><p>ADDRESS</p><strong>California, TX 70240</strong></div>
+                  <div class="content"><p>ADDRESS</p><strong>Plot-43, Alam Arcade (4th Floor), Gulshan-2, Dhaka; PS; Dhaka-1212; Bangladesh.</strong></div>
                 </li>
                 <li>
-                  <div class="content"><p>EMAIL</p><strong>support@validtheme.com</strong></div>
+                  <div class="content"><p>EMAIL</p><strong>info@icpbd.com</strong></div>
                 </li>
                 <li>
-                  <div class="content"><p>PHONE</p><strong>+44-20-7328-4499</strong></div>
+                  <div class="content"><p>PHONE</p><strong><span>+88 01952 244000 <br>+880 2-9860176</span></strong></div>
                 </li>
               </ul>
             </div>

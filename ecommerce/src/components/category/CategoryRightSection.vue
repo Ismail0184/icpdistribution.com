@@ -30,19 +30,18 @@
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-grid" role="tabpanel" aria-labelledby="nav-grid-tab">
             <div class="row">
-              <div class="col-lg-4 col-md-6 col-12">
-
+              <div class="col-lg-4 col-md-6 col-12" v-for="(product,key) in products" :key="key">
                 <div class="single-product">
                   <div class="product-image">
-                    <img src="/assets/images/products/product-1.jpg" alt="#">
+                    <img :src="product.image" alt="#" height="335" width="337">
                     <div class="button">
-                      <router-link :to="{name:'product'}" class="btn"><i class="lni lni-cart"></i> Add to Cart</router-link>
+                      <router-link :to="{name:'product',params:{'id':product.id}}" class="btn"><i class="lni lni-cart"></i> Add to Cart</router-link>
                     </div>
                   </div>
                   <div class="product-info">
                     <span class="category">Watches</span>
                     <h4 class="title">
-                      <router-link :to="{name:'product'}" class="btn">Xiaomi Mi Band 5</router-link>
+                      <router-link :to="{name:'product',params:{'id':product.id}}" class="btn">{{product.name}}</router-link>
                     </h4>
                     <ul class="review">
                       <li><i class="lni lni-star-filled"></i></li>
@@ -53,7 +52,8 @@
                       <li><span>4.0 Review(s)</span></li>
                     </ul>
                     <div class="price">
-                      <span>$199.00</span>
+                      <span>BDT {{product.selling_price}}</span>
+                      <span class="discount-price">BDT {{product.regular_price}}</span>
                     </div>
                   </div>
                 </div>
@@ -286,8 +286,21 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
-  name: "CategoryRightSection"
+  name: "CategoryRightSection",
+  data() {
+    return {
+      id : this.$route.params.id,
+      products : []
+    }
+  },
+  created() {
+    axios.get('http://127.0.0.1:8000/api/all-category-product/'+this.id).then(response => {
+      this.products = response.data;
+      console.log(response.data);
+    })
+  }
 }
 </script>
 

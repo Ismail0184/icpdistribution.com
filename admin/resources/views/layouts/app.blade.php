@@ -56,6 +56,8 @@
                             <a href="javascript:void(0)" aria-expanded="true"><i class="ti-layout-sidebar-left"></i><span>Website</span></a>
                             <ul class="collapse">
                                 <li><a href="{{route('admin.web.carousel.view')}}">Carousel</a></li>
+                                <li><a href="{{route('admin.web.blog.view')}}">Blog</a></li>
+                                <li><a href="{{route('admin.web.bp.view')}}">Business Partner </a></li>
                                 <li><a href="{{route('admin.web.about.view')}}">About</a></li>
                                 <li><a href="{{route('admin.web.contactUs.view')}}">Contact Us</a></li>
                             </ul>

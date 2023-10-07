@@ -13,13 +13,10 @@
             <div class="col-md-6 info">
               <h2>We’re Constantly Improving Our Skills to Fulfill Projects</h2>
               <p>
-                <strong>25+ years experience in business and finance consulting, IT solutions, <br> and working with 5k+ clients over the world. </strong>
+                <strong>Touch the lives of people by providing their basic needs.</strong>
               </p>
               <p>
-                Preserved defective offending he daughters on or. Advantages prosperous remarkably my inhabiting so reasonably be if. Too any appearance announcing impossible one. Out mrs means heart ham tears shall power every.
-              </p>
-              <p>
-                Shutters ye marriage to throwing we as. Effect in if agreed he wished wanted admire expect. Or shortly visitor is comfort placing to cheered do. Few hills tears are weeks saw. Partiality insensible celebrated is in. Am offended as wandered thoughts greatest an friendly.
+                We hope to generate in our customers the same enthusiasm and effort we put into each of the projects we develop. That is our goal and our commitment.
               </p>
               <a class="btn circle btn-theme effect btn-md" href="#">Discover More</a>
             </div>

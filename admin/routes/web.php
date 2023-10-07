@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\UnitController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\Website\CarouselController;
 use App\Http\Controllers\Admin\EcommerceCarouselController;
+use App\Http\Controllers\Admin\Website\BlogController;
 
 
 
@@ -80,6 +81,22 @@ Route::middleware([
     Route::get('admin/website/carousel/edit/{id}',[CarouselController::class,'edit'])->name('admin.web.carousel.edit');
     Route::post('admin/website/carousel/update/{id}',[CarouselController::class,'update'])->name('admin.web.carousel.update');
     Route::post('admin/website/carousel/destroy/{id}',[CarouselController::class,'destroy'])->name('admin.web.carousel.destroy');
+
+    //admin/website/Business Partner
+    Route::get('admin/website/business-partner/',[BlogController::class,'index'])->name('admin.web.bp.view');
+    Route::get('admin/website/business-partner/create',[BlogController::class,'create'])->name('admin.web.bp.create');
+    Route::post('admin/website/business-partner/store',[BlogController::class,'store'])->name('admin.web.bp.store');
+    Route::get('admin/website/business-partner/edit/{id}',[BlogController::class,'edit'])->name('admin.web.bp.edit');
+    Route::post('admin/website/business-partner/update/{id}',[BlogController::class,'update'])->name('admin.web.bp.update');
+    Route::post('admin/website/business-partner/destroy/{id}',[BlogController::class,'destroy'])->name('admin.web.bp.destroy');
+
+    //admin/website/Blog
+    Route::get('admin/website/blog/',[BlogController::class,'index'])->name('admin.web.blog.view');
+    Route::get('admin/website/blog/create',[BlogController::class,'create'])->name('admin.web.blog.create');
+    Route::post('admin/website/blog/store',[BlogController::class,'store'])->name('admin.web.blog.store');
+    Route::get('admin/website/blog/edit/{id}',[BlogController::class,'edit'])->name('admin.web.blog.edit');
+    Route::post('admin/website/blog/update/{id}',[BlogController::class,'update'])->name('admin.web.blog.update');
+    Route::post('admin/website/blog/destroy/{id}',[BlogController::class,'destroy'])->name('admin.web.blog.destroy');
 
     //admin/website/about
     Route::get('admin/website/about/',[CarouselController::class,'index'])->name('admin.web.about.view');

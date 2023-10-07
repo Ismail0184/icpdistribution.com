@@ -9,8 +9,7 @@
               <div class="f-item about">
                 <h4 class="widget-title">About</h4>
                 <p>
-                  ICP Distribution Company is the pioneer and largest Distributor of Global Manufacturing Companies such as - British American Tobacco Bangladesh, Unilever Bangladesh Limited, Reckitt Benckiser Bangladesh Limited, Coca Cola, Pure It Water, Citycell Telecom, Pak Fan, Tele Labs Video Conferencing and more.
-
+                  <img src="/assets/img/logo.png" class="logo" alt="Logo"> Distribution Company is the pioneer and largest Distributor of Global Manufacturing Companies such as - Robert BOSCH (bangladesh) Limited, Believe Pte Ltd and more.
                 </p>
                 <ul>
                   <li>
@@ -43,7 +42,7 @@
                     <a href="#">Gallery</a>
                   </li>
                   <li>
-                    <a href="#">About Us</a>
+                    <router-link to="/about">About Us</router-link>
                   </li>
                   <li>
                     <a href="#">Services</a>
@@ -81,17 +80,17 @@
                 <ul>
                   <li>
                     <div class="icon"><i class="flaticon-location"></i></div>
-                    <span>22 Baker Street, Koenigstrasse 65, Bad Sülze, Mecklenburg-Vorpommern, Philippines</span>
+                    <span>Plot-43, Alam Arcade (4th Floor), Gulshan-2, Dhaka; PS; Dhaka-1212; Bangladesh.</span>
                   </li>
                   <li>
                     <div class="icon">
                       <i class="flaticon-call-center"></i>
                     </div>
-                    <span>+123 456 7890 <br>+456 123 4455  </span>
+                    <span>+88 01952 244000 <br>+880 2-9860176</span>
                   </li>
                   <li>
                     <div class="icon"><i class="flaticon-email"></i> </div>
-                    <span>support@buscom.com</span>
+                    <span>info@icpbd.com</span>
                   </li>
                 </ul>
               </div>

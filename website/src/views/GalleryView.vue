@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12">
-            <h1>Media</h1>
+            <h1>Gallery</h1>
           </div>
         </div>
       </div>
@@ -18,7 +18,7 @@
             <ul class="breadcrumb">
               <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
               <li><a href="#">Pages</a></li>
-              <li class="active">Careers</li>
+              <li class="active">Gallery</li>
             </ul>
           </div>
         </div>

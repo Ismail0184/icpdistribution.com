@@ -30,5 +30,6 @@ Route::get('/carousel-active',[APIController::class,'getCarouselActive']);
 Route::get('/carousel-ecommerce',[APIController::class,'getCarouselEcommerce']);
 Route::get('/trending-products',[APIController::class,'getTrendingProducts']);
 
-//
 Route::get('/website/blogs',[APIController::class,'getBlogs']);
+Route::get('/website/business-partner',[APIController::class,'getBusinessPartner']);
+Route::get('/website/business-partner-single/{id}',[APIController::class,'getBusinessPartnerSingle']);

@@ -57,7 +57,8 @@ class BusinessPartner extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        WebsiteBusinessPartner::updateBP($request, $id);
+        return redirect('admin/website/business-partner/')->with('update_message','This business partner (uid='.$id.') has been updated!!');
     }
 
     /**
@@ -65,6 +66,7 @@ class BusinessPartner extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        WebsiteBusinessPartner::destroyBP($id);
+        return redirect('admin/website/business-partner/')->with('destroy_message','This business partner (uid='.$id.') has been deleted!!');
     }
 }

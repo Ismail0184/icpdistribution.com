@@ -38,7 +38,7 @@
                                         <td>{{$bp->serial}}</td>
                                         <td class="text-left">{{$bp->partner_name}}</td>
                                         <td class="text-left">{!! $bp->description !!}</td>
-                                        <td><img src="{{asset($bp->image)}}" alt="logo" height="50" width="70"/></td>
+                                        <td><img src="{{asset($bp->logo)}}" alt="logo" height="50" width="70"/></td>
                                         <td>
                                             @if($bp->status == '1') <span class="badge badge-success">Active</span>
                                             @elseif($bp->status == '0') <span class="badge badge-danger">Inactive</span>

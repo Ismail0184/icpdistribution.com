@@ -23,9 +23,14 @@ const routes = [
   }
   ,
   {
-    path: '/media',
-    name: 'media',
-    component: () => import(/* webpackChunkName: "media" */ '../views/MediaView.vue')
+    path: '/gallery',
+    name: 'gallery',
+    component: () => import(/* webpackChunkName: "gallery" */ '../views/GalleryView.vue')
+  },
+  {
+    path: '/business-partner/:id',
+    name: 'businessPartner',
+    component: () => import(/* webpackChunkName: "businessPartner" */ '../views/BusinessPartnerView.vue')
   }
 ]
 

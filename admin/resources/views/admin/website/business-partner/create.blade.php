@@ -30,7 +30,7 @@
 
                                     <div class="form-group">
                                         <label for="description">Description</label>
-                                        <textarea name="details"  class="form-control">@if(request('id')>0){{$bp->details}} @endif</textarea>
+                                        <textarea name="description"  class="form-control">@if(request('id')>0){!! $bp->description !!} @endif</textarea>
                                     </div>
 
                                     <div class="form-group">

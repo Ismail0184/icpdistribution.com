@@ -103,11 +103,10 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Business Partners</a>
                 <ul class="dropdown-menu">
-                  <li><a href="https://believe.sg/" target="_blank">Believe Pte. Ltd.</a></li>
-                  <li><a href="https://www.bosch.com.bd/bd/en/" target="_blank">Robert Bosch (Bangladesh) Limited</a></li>
+                  <li v-for="(businessPartner,key) in businessPartners" :key="key"><router-link :to="{name:'businessPartner',params:{'id':businessPartner.id}}">{{businessPartner.partner_name}}</router-link></li>
                 </ul>
               </li>
-              <li><router-link to="/media">Media</router-link></li>
+              <li><router-link to="/gallery">Gallery</router-link></li>
               <li><router-link to="/careers">Careers</router-link></li>
               <li><router-link to="/contact">Contact</router-link></li>
               <li><a href="http://192.168.0.25:8081/" target="_blank">Buy Products</a></li>
@@ -177,12 +176,16 @@ export default {
   data() {
     return {
       categories : [],
+      businessPartners : [],
     }
   },
   created() {
     axios.get("http://127.0.0.1:8000/api/all-category").then(response => {
       this.categories = response.data
-    })
+    });
+    axios.get("http://127.0.0.1:8000/api/website/business-partner").then(getBusinessPartber => {
+      this.businessPartners = getBusinessPartber.data
+    });
   }
 }
 </script>

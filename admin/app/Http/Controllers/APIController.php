@@ -8,12 +8,13 @@ use App\Models\Admin\Product;
 use App\Models\Admin\products;
 use App\Models\Admin\SubCategory;
 use App\Models\Admin\WebsiteBlog;
+use App\Models\Admin\WebsiteBusinessPartner;
 use App\Models\Admin\WebsiteCarousel;
 use Illuminate\Http\Request;
 
 class APIController extends Controller
 {
-    private $categories,$subCategories, $blogs, $index, $products;
+    private $categories,$subCategories, $blogs, $bps, $bp, $products;
 
     public function getAllCategory()
     {
@@ -81,6 +82,23 @@ class APIController extends Controller
             $blog->image = asset($blog->image);
         }
         return response()->json($this->blogs);
+    }
+
+    public function getBusinessPartner()
+    {
+        $this->bps = WebsiteBusinessPartner::where('status',1)->orderBy('id','asc')->get();
+        foreach ($this->bps as $bp)
+        {
+            $bp->logo = asset($bp->logo);
+        }
+        return response()->json($this->bps);
+    }
+
+    public function getBusinessPartnerSingle($id)
+    {
+        $this->bps = WebsiteBusinessPartner::findOrfail($id);
+        $this->bps->logo = asset($this->bps->logo);
+        return response()->json($this->bps);
     }
 
 }

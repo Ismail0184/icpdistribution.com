@@ -1,7 +1,7 @@
 <template>
 
   <HeaderView/>
-  <router-view/>
+  <router-view :key="$route.path"/>
   <FooterView/>
 </template>
 

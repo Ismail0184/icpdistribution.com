@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\Website\CarouselController;
 use App\Http\Controllers\Admin\EcommerceCarouselController;
 use App\Http\Controllers\Admin\Website\BlogController;
+use App\Http\Controllers\Admin\Website\BusinessPartner;
 
 
 
@@ -83,12 +84,12 @@ Route::middleware([
     Route::post('admin/website/carousel/destroy/{id}',[CarouselController::class,'destroy'])->name('admin.web.carousel.destroy');
 
     //admin/website/Business Partner
-    Route::get('admin/website/business-partner/',[BlogController::class,'index'])->name('admin.web.bp.view');
-    Route::get('admin/website/business-partner/create',[BlogController::class,'create'])->name('admin.web.bp.create');
-    Route::post('admin/website/business-partner/store',[BlogController::class,'store'])->name('admin.web.bp.store');
-    Route::get('admin/website/business-partner/edit/{id}',[BlogController::class,'edit'])->name('admin.web.bp.edit');
-    Route::post('admin/website/business-partner/update/{id}',[BlogController::class,'update'])->name('admin.web.bp.update');
-    Route::post('admin/website/business-partner/destroy/{id}',[BlogController::class,'destroy'])->name('admin.web.bp.destroy');
+    Route::get('admin/website/business-partner/',[BusinessPartner::class,'index'])->name('admin.web.bp.view');
+    Route::get('admin/website/business-partner/create',[BusinessPartner::class,'create'])->name('admin.web.bp.create');
+    Route::post('admin/website/business-partner/store',[BusinessPartner::class,'store'])->name('admin.web.bp.store');
+    Route::get('admin/website/business-partner/edit/{id}',[BusinessPartner::class,'edit'])->name('admin.web.bp.edit');
+    Route::post('admin/website/business-partner/update/{id}',[BusinessPartner::class,'update'])->name('admin.web.bp.update');
+    Route::post('admin/website/business-partner/destroy/{id}',[BusinessPartner::class,'destroy'])->name('admin.web.bp.destroy');
 
     //admin/website/Blog
     Route::get('admin/website/blog/',[BlogController::class,'index'])->name('admin.web.blog.view');

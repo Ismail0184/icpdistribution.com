@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('business_partners', function (Blueprint $table) {
+        Schema::create('website_business_partners', function (Blueprint $table) {
             $table->id();
             $table->integer('serial')->nullable();
             $table->string('partner_name');
-            $table->text('website');
-            $table->text('logo');
-            $table->longText('description');
+            $table->string('website')->nullable();
+            $table->text('logo')->nullable();
+            $table->longText('description')->nullable();
             $table->integer('status')->default(1);
             $table->integer('entry_by');
             $table->timestamps();
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('business_partners');
+        Schema::dropIfExists('website_business_partners');
     }
 };

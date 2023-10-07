@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Admin\Website;
 
 use App\Http\Controllers\Controller;
+use App\Models\Admin\WebsiteBusinessPartner;
 use Illuminate\Http\Request;
+use function Psy\bin;
 
 class BusinessPartner extends Controller
 {
@@ -12,7 +14,8 @@ class BusinessPartner extends Controller
      */
     public function index()
     {
-        //
+        $bps = WebsiteBusinessPartner::all();
+        return view('admin.website.business-partner.index',compact('bps'));
     }
 
     /**
@@ -20,7 +23,7 @@ class BusinessPartner extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.website.business-partner.create');
     }
 
     /**
@@ -28,7 +31,8 @@ class BusinessPartner extends Controller
      */
     public function store(Request $request)
     {
-        //
+        WebsiteBusinessPartner::storeBP($request);
+        return redirect('admin/website/business-partner/')->with('store_message','A new business partner has been successfully created!!');
     }
 
     /**
@@ -44,7 +48,8 @@ class BusinessPartner extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $bp = WebsiteBusinessPartner::findOrfail($id);
+        return view('admin.website.business-partner.create',compact('bp'));
     }
 
     /**

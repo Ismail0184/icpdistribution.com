@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62c727a9-ffd8-4554-abcc-325c5d03fc5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/website/src/views/BusinessPartnerView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/Http/Controllers/Admin/Website/BusinessPartner.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Http/Controllers/Admin/Website/BusinessPartner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/Models/Admin/WebsiteBusinessPartner.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Models/Admin/WebsiteBusinessPartner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/website/business-partner/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/website/business-partner/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/website/business-partner/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/website/business-partner/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/node_modules/.cache/eslint/56c2a6ea.json" beforeDir="false" afterPath="$PROJECT_DIR$/website/node_modules/.cache/eslint/56c2a6ea.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/includes/HeaderView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/includes/HeaderView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/views/MediaView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/views/GalleryView.vue" afterDir="false" />
-    </list>
+    <list default="true" id="62c727a9-ffd8-4554-abcc-325c5d03fc5a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -222,7 +206,7 @@
       <workItem from="1696327613162" duration="3979000" />
       <workItem from="1696392106835" duration="17903000" />
       <workItem from="1696478526130" duration="12395000" />
-      <workItem from="1696652227136" duration="13966000" />
+      <workItem from="1696652227136" duration="14608000" />
     </task>
     <servers />
   </component>

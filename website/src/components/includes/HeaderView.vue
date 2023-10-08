@@ -37,10 +37,10 @@
           </div>
           <div class="col-md-4 social text-right">
             <ul>
-              <li><a href="https://www.facebook.com/ICPBDLTD" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-              <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+              <li><a :href="socialMedia.facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a :href="socialMedia.twitter" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a :href="socialMedia.linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a :href="socialMedia.youtube" target="_blank"><i class="fab fa-youtube"></i></a></li>
             </ul>
           </div>
         </div>
@@ -178,6 +178,7 @@ export default {
       categories : [],
       businessPartners : [],
       contact : '',
+      socialMedia : '',
     }
   },
   created() {
@@ -189,6 +190,9 @@ export default {
     });
     axios.get("http://127.0.0.1:8000/api/contact").then(contactResponse => {
       this.contact = contactResponse.data
+    });
+    axios.get("http://127.0.0.1:8000/api/social-media").then(socialMediaData => {
+      this.socialMedia = socialMediaData.data
     });
   }
 }

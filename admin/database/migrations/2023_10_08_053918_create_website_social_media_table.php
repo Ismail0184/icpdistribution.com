@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('website_social_media', function (Blueprint $table) {
             $table->id();
+            $table->text('facebook')->nullable();
+            $table->text('twitter')->nullable();
+            $table->text('linkedin')->nullable();
+            $table->text('youtube')->nullable();
+            $table->text('instagram')->nullable();
             $table->timestamps();
         });
     }

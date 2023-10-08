@@ -12,18 +12,10 @@
                   <img src="/assets/img/logo.png" class="logo" alt="Logo"> Distribution Company is the pioneer and largest Distributor of Global Manufacturing Companies such as - Robert BOSCH (bangladesh) Limited, Believe Pte Ltd and more.
                 </p>
                 <ul>
-                  <li>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-dribbble"></i></a>
-                  </li>
+                  <li><a :href="socialMedia.facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a :href="socialMedia.twitter" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                  <li><a :href="socialMedia.linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a :href="socialMedia.youtube" target="_blank"><i class="fab fa-youtube"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -121,15 +113,17 @@ export default {
   data() {
     return {
       contact : '',
-      showButton: false,
+      socialMedia: '',
     }
   },
   created() {
     axios.get("http://127.0.0.1:8000/api/contact").then(response => {
       this.contact = response.data
     })
-  },
-
+    axios.get("http://127.0.0.1:8000/api/social-media").then(socialMediaData => {
+      this.socialMedia = socialMediaData.data
+    });
+  }
 }
 </script>
 

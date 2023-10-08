@@ -35,3 +35,4 @@ Route::get('/website/business-partner',[APIController::class,'getBusinessPartner
 Route::get('/website/business-partner-single/{id}',[APIController::class,'getBusinessPartnerSingle']);
 
 Route::get('/contact',[APIController::class,'getContact']);
+Route::get('/social-media',[APIController::class,'getSocialMedia']);

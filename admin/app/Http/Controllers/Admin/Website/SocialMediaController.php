@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin\Website;
 
 use App\Http\Controllers\Controller;
+use App\Models\Admin\WebsiteSocialMedia;
 use Illuminate\Http\Request;
 
 class SocialMediaController extends Controller
@@ -12,7 +13,8 @@ class SocialMediaController extends Controller
      */
     public function index()
     {
-        //
+        $data = WebsiteSocialMedia::findOrfail(1);
+        return view('admin.website.socialMedia.index',compact('data'));
     }
 
     /**
@@ -52,7 +54,8 @@ class SocialMediaController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        WebsiteSocialMedia::updateSocialMedia($request, $id);
+        return redirect('/admin/social-media/')->with('update_message','Social Media has been updated!!');
     }
 
     /**

@@ -11,6 +11,7 @@ use App\Models\Admin\SubCategory;
 use App\Models\Admin\WebsiteBlog;
 use App\Models\Admin\WebsiteBusinessPartner;
 use App\Models\Admin\WebsiteCarousel;
+use App\Models\Admin\WebsiteSocialMedia;
 use Illuminate\Http\Request;
 
 class APIController extends Controller
@@ -105,6 +106,12 @@ class APIController extends Controller
     public function getContact()
     {
         $this->contact = Contact::findOrfail(1);
+        return response()->json($this->contact);
+    }
+
+    public function getSocialMedia()
+    {
+        $this->contact = WebsiteSocialMedia::findOrfail(1);
         return response()->json($this->contact);
     }
 

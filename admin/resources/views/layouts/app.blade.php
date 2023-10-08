@@ -60,6 +60,7 @@
                                 <li><a href="{{route('admin.web.bp.view')}}">Business Partner </a></li>
                                 <li><a href="{{route('admin.web.about.view')}}">About</a></li>
                                 <li><a href="{{route('contact')}}">Contact Us</a></li>
+                                <li><a href="{{route('socialMedia')}}">Social Media</a></li>
                             </ul>
                         </li>
 

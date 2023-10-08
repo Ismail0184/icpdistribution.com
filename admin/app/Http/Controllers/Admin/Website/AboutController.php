@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin\Website;
 
 use App\Http\Controllers\Controller;
+use App\Models\Admin\WebsiteAbout;
 use Illuminate\Http\Request;
 
 class AboutController extends Controller
@@ -12,7 +13,8 @@ class AboutController extends Controller
      */
     public function index()
     {
-        //
+        $abouts = WebsiteAbout::all();
+        return view('admin.website.about.index',compact('abouts'));
     }
 
     /**
@@ -20,7 +22,7 @@ class AboutController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.website.about.create');
     }
 
     /**
@@ -28,7 +30,8 @@ class AboutController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        WebsiteAbout::storeAbout($request);
+        return redirect('admin/website/about/')->with('store_message','A new about section has been successfully created!!');
     }
 
     /**

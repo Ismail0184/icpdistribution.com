@@ -13,6 +13,7 @@ use App\Http\Controllers\Admin\Website\BlogController;
 use App\Http\Controllers\Admin\Website\BusinessPartner;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\Website\SocialMediaController;
+use App\Http\Controllers\Admin\Website\AboutController;
 
 
 
@@ -44,12 +45,7 @@ Route::middleware([
 
     //Admin/social media
     Route::get('/admin/social-media/',[SocialMediaController::class,'index'])->name('socialMedia');
-    Route::get('/admin/social-media/create',[SocialMediaController::class,'create'])->name('socialMedia.create');
-    Route::post('/admin/social-media/store',[SocialMediaController::class,'store'])->name('socialMedia.store');
-    Route::get('/admin/social-media/edit/{id}',[SocialMediaController::class,'edit'])->name('socialMedia.edit');
-    Route::get('/admin/social-media/show/{id}',[SocialMediaController::class,'show'])->name('socialMedia.show');
     Route::post('/admin/social-media/update/{id}',[SocialMediaController::class,'update'])->name('socialMedia.update');
-    Route::post('/admin/social-media/destroy/{id}',[SocialMediaController::class,'destroy'])->name('socialMedia.destroy');
 
     //Admin/Category
     Route::get('/admin/category/',[CategoryController::class,'index'])->name('category');
@@ -121,11 +117,11 @@ Route::middleware([
     Route::post('admin/website/blog/destroy/{id}',[BlogController::class,'destroy'])->name('admin.web.blog.destroy');
 
     //admin/website/about
-    Route::get('admin/website/about/',[CarouselController::class,'index'])->name('admin.web.about.view');
-    Route::get('admin/website/about/create',[CarouselController::class,'create'])->name('admin.web.about.create');
-    Route::post('admin/website/about/store',[CarouselController::class,'store'])->name('admin.web.about.store');
-    Route::get('admin/website/about/edit/{id}',[CarouselController::class,'edit'])->name('admin.web.about.edit');
-    Route::post('admin/website/about/update/{id}',[CarouselController::class,'update'])->name('admin.web.about.update');
-    Route::post('admin/website/about/destroy/{id}',[CarouselController::class,'destroy'])->name('admin.web.about.destroy');
+    Route::get('admin/website/about/',[AboutController::class,'index'])->name('admin.web.about.view');
+    Route::get('admin/website/about/create',[AboutController::class,'create'])->name('admin.web.about.create');
+    Route::post('admin/website/about/store',[AboutController::class,'store'])->name('admin.web.about.store');
+    Route::get('admin/website/about/edit/{id}',[AboutController::class,'edit'])->name('admin.web.about.edit');
+    Route::post('admin/website/about/update/{id}',[AboutController::class,'update'])->name('admin.web.about.update');
+    Route::post('admin/website/about/destroy/{id}',[AboutController::class,'destroy'])->name('admin.web.about.destroy');
 
 });

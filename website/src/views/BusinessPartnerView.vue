@@ -31,7 +31,7 @@
           <div class="col-md-12">
             <div class="site-heading text-center">
               <img :src="bp.logo" height="200" width="200">
-              <h2>{{bp.partner_name}}</h2><br>
+              <!--h2>{{bp.partner_name}}</h2--><br>
               <div v-html="bp.description"></div>
             <br>
               <a :href="bp.website" target="_blank">Learn More..</a>

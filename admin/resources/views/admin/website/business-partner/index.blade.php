@@ -25,7 +25,6 @@
                                     <th style="width: 1%">#</th>
                                     <th style="width: 1%">Serial</th>
                                     <th>Partner Name</th>
-                                    <th>Description</th>
                                     <th>Logo</th>
                                     <th>Status</th>
                                     <th style="width: 15%">Option</th>
@@ -37,7 +36,6 @@
                                         <td>{{$loop->iteration}}</td>
                                         <td>{{$bp->serial}}</td>
                                         <td class="text-left">{{$bp->partner_name}}</td>
-                                        <td class="text-left">{!! $bp->description !!}</td>
                                         <td><img src="{{asset($bp->logo)}}" alt="logo" height="50" width="70"/></td>
                                         <td>
                                             @if($bp->status == '1') <span class="badge badge-success">Active</span>
@@ -49,6 +47,9 @@
                                                 @csrf
                                                 <a href="{{route('admin.web.bp.edit',['id' => $bp->id])}}" title="Update" class="btn btn-primary btn-sm">
                                                     <i class="fa fa-edit"></i>
+                                                </a>
+                                                <a href="{{route('admin.web.bp.show',['id' => $bp->id])}}" title="Update" class="btn btn-secondary btn-sm">
+                                                    <i class="fa fa-book"></i>
                                                 </a>
                                                 <button type="submit" class="btn btn-danger btn-sm" title="Delete" onclick="return confirm('Are you confirm to delete?');">
                                                     <i class="fa fa-trash"></i>

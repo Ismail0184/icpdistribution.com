@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Admin\Category;
+use App\Models\Admin\Contact;
 use App\Models\Admin\EcommerceCarousel;
 use App\Models\Admin\Product;
 use App\Models\Admin\products;
@@ -14,7 +15,7 @@ use Illuminate\Http\Request;
 
 class APIController extends Controller
 {
-    private $categories,$subCategories, $blogs, $bps, $bp, $products;
+    private $categories,$subCategories, $blogs, $bps, $contact, $products;
 
     public function getAllCategory()
     {
@@ -99,6 +100,12 @@ class APIController extends Controller
         $this->bps = WebsiteBusinessPartner::findOrfail($id);
         $this->bps->logo = asset($this->bps->logo);
         return response()->json($this->bps);
+    }
+
+    public function getContact()
+    {
+        $this->contact = Contact::findOrfail(1);
+        return response()->json($this->contact);
     }
 
 }

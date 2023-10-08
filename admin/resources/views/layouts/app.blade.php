@@ -59,7 +59,7 @@
                                 <li><a href="{{route('admin.web.blog.view')}}">Blog</a></li>
                                 <li><a href="{{route('admin.web.bp.view')}}">Business Partner </a></li>
                                 <li><a href="{{route('admin.web.about.view')}}">About</a></li>
-                                <li><a href="{{route('admin.web.contactUs.view')}}">Contact Us</a></li>
+                                <li><a href="{{route('contact')}}">Contact Us</a></li>
                             </ul>
                         </li>
 

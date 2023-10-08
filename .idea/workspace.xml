@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62c727a9-ffd8-4554-abcc-325c5d03fc5a" name="Changes" comment="" />
+    <list default="true" id="62c727a9-ffd8-4554-abcc-325c5d03fc5a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/resources/views/admin/contact/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/resources/views/admin/contact/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/resources/views/admin/contact/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/resources/views/admin/website/business-partner/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/src/components/contact/ContactAreaView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/src/components/contact/MapAreaView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/Http/Controllers/Admin/Website/BusinessPartner.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Http/Controllers/Admin/Website/BusinessPartner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/website/business-partner/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/website/business-partner/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/node_modules/.cache/eslint/56c2a6ea.json" beforeDir="false" afterPath="$PROJECT_DIR$/website/node_modules/.cache/eslint/56c2a6ea.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/components/includes/FooterView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/includes/FooterView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/components/includes/HeaderView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/includes/HeaderView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/views/BusinessPartnerView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/views/BusinessPartnerView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/views/ContactUsView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/views/ContactUsView.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,7 +225,9 @@
       <workItem from="1696327613162" duration="3979000" />
       <workItem from="1696392106835" duration="17903000" />
       <workItem from="1696478526130" duration="12395000" />
-      <workItem from="1696652227136" duration="14608000" />
+      <workItem from="1696652227136" duration="14626000" />
+      <workItem from="1696671714805" duration="6449000" />
+      <workItem from="1696736101834" duration="7455000" />
     </task>
     <servers />
   </component>

@@ -56,16 +56,16 @@
                 <h4 class="widget-title">Company</h4>
                 <ul>
                   <li>
-                    <a href="#">Home</a>
+                    <router-link :to="{name:'home'}">Home</router-link>
                   </li>
                   <li>
-                    <a href="#">About Us</a>
+                    <router-link :to="{name:'about'}">About Us</router-link>
                   </li>
                   <li>
-                    <a href="#">Contact</a>
+                    <router-link :to="{name:'contact'}">Contact</router-link>
                   </li>
                   <li>
-                    <a href="#">Gallery</a>
+                    <router-link :to="{name:'gallery'}">Gallery</router-link>
                   </li>
                   <li>
                     <a href="#">Faq</a>
@@ -80,17 +80,17 @@
                 <ul>
                   <li>
                     <div class="icon"><i class="flaticon-location"></i></div>
-                    <span>Plot-43, Alam Arcade (4th Floor), Gulshan-2, Dhaka; PS; Dhaka-1212; Bangladesh.</span>
+                    <span v-html="contact.location"></span>
                   </li>
                   <li>
                     <div class="icon">
                       <i class="flaticon-call-center"></i>
                     </div>
-                    <span>+88 01952 244000 <br>+880 2-9860176</span>
+                    <span v-html="contact.phone"></span>
                   </li>
                   <li>
                     <div class="icon"><i class="flaticon-email"></i> </div>
-                    <span>info@icpbd.com</span>
+                    <span v-html="contact.email"></span>
                   </li>
                 </ul>
               </div>
@@ -115,8 +115,21 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
-  name: "FooterView"
+  name: "FooterView",
+  data() {
+    return {
+      contact : '',
+      showButton: false,
+    }
+  },
+  created() {
+    axios.get("http://127.0.0.1:8000/api/contact").then(response => {
+      this.contact = response.data
+    })
+  },
+
 }
 </script>
 

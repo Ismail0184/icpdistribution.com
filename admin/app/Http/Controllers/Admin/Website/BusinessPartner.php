@@ -40,7 +40,8 @@ class BusinessPartner extends Controller
      */
     public function show(string $id)
     {
-        //
+        $bp = WebsiteBusinessPartner::findOrfail($id);
+        return view('admin.website.business-partner.show',compact('bp'));
     }
 
     /**

@@ -11,6 +11,8 @@ use App\Http\Controllers\Admin\Website\CarouselController;
 use App\Http\Controllers\Admin\EcommerceCarouselController;
 use App\Http\Controllers\Admin\Website\BlogController;
 use App\Http\Controllers\Admin\Website\BusinessPartner;
+use App\Http\Controllers\Admin\ContactController;
+use App\Http\Controllers\Admin\Website\SocialMediaController;
 
 
 
@@ -30,6 +32,24 @@ Route::middleware([
     Route::get('/admin/carousel/edit/{id}',[EcommerceCarouselController::class,'edit'])->name('carousel.edit');
     Route::post('/admin/carousel/update/{id}',[EcommerceCarouselController::class,'update'])->name('carousel.update');
     Route::post('/admin/carousel/destroy/{id}',[EcommerceCarouselController::class,'destroy'])->name('carousel.destroy');
+
+    //Admin/contact
+    Route::get('/admin/contact/',[ContactController::class,'index'])->name('contact');
+    Route::get('/admin/contact/create',[ContactController::class,'create'])->name('contact.create');
+    Route::post('/admin/contact/store',[ContactController::class,'store'])->name('contact.store');
+    Route::get('/admin/contact/edit/{id}',[ContactController::class,'edit'])->name('contact.edit');
+    Route::get('/admin/contact/show/{id}',[ContactController::class,'show'])->name('contact.show');
+    Route::post('/admin/contact/update/{id}',[ContactController::class,'update'])->name('contact.update');
+    Route::post('/admin/contact/destroy/{id}',[ContactController::class,'destroy'])->name('contact.destroy');
+
+    //Admin/social media
+    Route::get('/admin/social-media/',[SocialMediaController::class,'index'])->name('socialMedia');
+    Route::get('/admin/social-media/create',[SocialMediaController::class,'create'])->name('socialMedia.create');
+    Route::post('/admin/social-media/store',[SocialMediaController::class,'store'])->name('socialMedia.store');
+    Route::get('/admin/social-media/edit/{id}',[SocialMediaController::class,'edit'])->name('socialMedia.edit');
+    Route::get('/admin/social-media/show/{id}',[SocialMediaController::class,'show'])->name('socialMedia.show');
+    Route::post('/admin/social-media/update/{id}',[SocialMediaController::class,'update'])->name('socialMedia.update');
+    Route::post('/admin/social-media/destroy/{id}',[SocialMediaController::class,'destroy'])->name('socialMedia.destroy');
 
     //Admin/Category
     Route::get('/admin/category/',[CategoryController::class,'index'])->name('category');
@@ -88,6 +108,7 @@ Route::middleware([
     Route::get('admin/website/business-partner/create',[BusinessPartner::class,'create'])->name('admin.web.bp.create');
     Route::post('admin/website/business-partner/store',[BusinessPartner::class,'store'])->name('admin.web.bp.store');
     Route::get('admin/website/business-partner/edit/{id}',[BusinessPartner::class,'edit'])->name('admin.web.bp.edit');
+    Route::get('admin/website/business-partner/show/{id}',[BusinessPartner::class,'show'])->name('admin.web.bp.show');
     Route::post('admin/website/business-partner/update/{id}',[BusinessPartner::class,'update'])->name('admin.web.bp.update');
     Route::post('admin/website/business-partner/destroy/{id}',[BusinessPartner::class,'destroy'])->name('admin.web.bp.destroy');
 
@@ -106,13 +127,5 @@ Route::middleware([
     Route::get('admin/website/about/edit/{id}',[CarouselController::class,'edit'])->name('admin.web.about.edit');
     Route::post('admin/website/about/update/{id}',[CarouselController::class,'update'])->name('admin.web.about.update');
     Route::post('admin/website/about/destroy/{id}',[CarouselController::class,'destroy'])->name('admin.web.about.destroy');
-
-    //admin/website/contact us
-    Route::get('admin/website/contact-us/',[CarouselController::class,'index'])->name('admin.web.contactUs.view');
-    Route::get('admin/website/contact-us/create',[CarouselController::class,'create'])->name('admin.web.contactUs.create');
-    Route::post('admin/website/contact-us/store',[CarouselController::class,'store'])->name('admin.web.contactUs.store');
-    Route::get('admin/website/contact-us/edit/{id}',[CarouselController::class,'edit'])->name('admin.web.contactUs.edit');
-    Route::post('admin/website/contact-us/update/{id}',[CarouselController::class,'update'])->name('admin.web.contactUs.update');
-    Route::post('admin/website/contact-us/destroy/{id}',[CarouselController::class,'destroy'])->name('admin.web.contactUs.destroy');
 
 });

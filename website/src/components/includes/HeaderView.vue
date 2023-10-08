@@ -13,7 +13,7 @@
                     <i class="flaticon-email"></i>
                   </div>
                   <div class="info">
-                    <span>Email</span> info@icpbd.com
+                    <span>Email</span> {{contact.email}}
                   </div>
                 </li>
                 <li>
@@ -21,7 +21,7 @@
                     <i class="flaticon-call-center"></i>
                   </div>
                   <div class="info">
-                    <span>Phone</span> +88 01952 244000
+                    <span>Phone</span> {{contact.mobile}}
                   </div>
                 </li>
                 <li>
@@ -177,6 +177,7 @@ export default {
     return {
       categories : [],
       businessPartners : [],
+      contact : '',
     }
   },
   created() {
@@ -185,6 +186,9 @@ export default {
     });
     axios.get("http://127.0.0.1:8000/api/website/business-partner").then(getBusinessPartber => {
       this.businessPartners = getBusinessPartber.data
+    });
+    axios.get("http://127.0.0.1:8000/api/contact").then(contactResponse => {
+      this.contact = contactResponse.data
     });
   }
 }

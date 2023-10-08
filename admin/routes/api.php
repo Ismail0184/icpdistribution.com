@@ -33,3 +33,5 @@ Route::get('/trending-products',[APIController::class,'getTrendingProducts']);
 Route::get('/website/blogs',[APIController::class,'getBlogs']);
 Route::get('/website/business-partner',[APIController::class,'getBusinessPartner']);
 Route::get('/website/business-partner-single/{id}',[APIController::class,'getBusinessPartnerSingle']);
+
+Route::get('/contact',[APIController::class,'getContact']);

@@ -31,6 +31,16 @@ const routes = [
     path: '/business-partner/:id',
     name: 'businessPartner',
     component: () => import(/* webpackChunkName: "businessPartner" */ '../views/BusinessPartnerView.vue')
+  },
+  {
+    path: '/category-product/:id',
+    name: 'category',
+    component: () => import(/* webpackChunkName: "category" */ '../views/CategoryView.vue')
+  },
+  {
+    path: '/sub-category-product/:id',
+    name: 'sub-category',
+    component: () => import(/* webpackChunkName: "category" */ '../views/SubCategoryView.vue')
   }
 ]
 

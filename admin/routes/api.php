@@ -24,6 +24,7 @@ Route::get('/all-sub-category',[APIController::class,'getAllSubCategory']);
 
 Route::get('/all-products',[APIController::class,'getAllProducts']);
 Route::get('/all-category-product/{id}',[APIController::class,'getCategoryProduct']);
+Route::get('/all-sub-category-product/{id}',[APIController::class,'getSubCategoryProduct']);
 
 Route::get('/carousel',[APIController::class,'getCarousel']);
 Route::get('/carousel-active',[APIController::class,'getCarouselActive']);
@@ -36,3 +37,5 @@ Route::get('/website/business-partner-single/{id}',[APIController::class,'getBus
 
 Route::get('/contact',[APIController::class,'getContact']);
 Route::get('/social-media',[APIController::class,'getSocialMedia']);
+Route::get('/website/vision',[APIController::class,'getVision']);
+Route::get('/website/mission',[APIController::class,'getMission']);

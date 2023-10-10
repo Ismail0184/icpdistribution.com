@@ -8,6 +8,7 @@ use App\Models\Admin\EcommerceCarousel;
 use App\Models\Admin\Product;
 use App\Models\Admin\products;
 use App\Models\Admin\SubCategory;
+use App\Models\Admin\WebsiteAbout;
 use App\Models\Admin\WebsiteBlog;
 use App\Models\Admin\WebsiteBusinessPartner;
 use App\Models\Admin\WebsiteCarousel;
@@ -71,6 +72,18 @@ class APIController extends Controller
         $this->products = Product::where('category_id',$id)->get();
         foreach ($this->products as $product)
         {
+            $product->category  = $product->category;
+            $product->image     = asset($product->image);
+        }
+        return response()->json($this->products);
+    }
+
+    public function getSubCategoryProduct($id)
+    {
+        $this->products = Product::where('sub_category_id',$id)->get();
+        foreach ($this->products as $product)
+        {
+            $product->category  = $product->category;
             $product->image     = asset($product->image);
         }
         return response()->json($this->products);
@@ -113,6 +126,20 @@ class APIController extends Controller
     {
         $this->contact = WebsiteSocialMedia::findOrfail(1);
         return response()->json($this->contact);
+    }
+
+    public function getVision()
+    {
+        $this->vision = WebsiteAbout::findOrfail(1);
+        $this->vision->image = asset($this->vision->image);
+        return response()->json($this->vision);
+    }
+
+    public function getMission()
+    {
+        $this->mission = WebsiteAbout::findOrfail(2);
+        $this->mission->image = asset($this->mission->image);
+        return response()->json($this->mission);
     }
 
 }

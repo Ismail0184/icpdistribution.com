@@ -43,15 +43,9 @@
                                             @endif
                                         </td>
                                         <td class="text-center">
-                                            <form action="{{route('admin.web.about.destroy', ['id' => $about->id])}}" method="post">
-                                                @csrf
                                                 <a href="{{route('admin.web.about.edit',['id' => $about->id])}}" title="Update" class="btn btn-primary btn-sm">
                                                     <i class="fa fa-edit"></i>
                                                 </a>
-                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete" onclick="return confirm('Are you confirm to delete?');">
-                                                    <i class="fa fa-trash"></i>
-                                                </button>
-                                            </form>
                                         </td>
                                     </tr>
                                 @endforeach

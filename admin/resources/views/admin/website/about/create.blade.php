@@ -20,20 +20,17 @@
                                     <input type="hidden" name="entry_by" value="{{ Auth::user()->id }}">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Section Name <span class="required text-danger">*</span></label>
-                                        <input type="text" class="form-control" required @if(request('id')>0) value="{{$about->section_name}}" @endif name="section_name">
+                                        <input type="text" class="form-control" required @if(request('id')>0) readonly value="{{$about->section_name}}" @endif name="section_name">
                                     </div>
-
                                     <div class="form-group">
                                         <label for="description">Description <span class="required text-danger">*</span></label>
                                         <textarea name="description" class="form-control">@if(request('id')>0){{$about->description}} @endif</textarea>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Image <span class="required text-danger">*</span></label>
                                         <input type="file" name="image" @if(request('id')>0) @else required @endif class="form-control">
                                         @if(request('id')>0) <img src="{{asset($about->image)}}" alt="" height="100" width="130"/> @endif
                                     </div>
-
                                     @if(request('id')>0)
                                         <div class="form-group">
                                             <label class="col-form-label">Status <span class="required text-danger">*</span></label>
@@ -43,7 +40,6 @@
                                             </select>
                                         </div>
                                     @endif
-
                                     <a href="{{route('admin.web.about.view')}}" type="submit" class="btn btn-danger mt-4 pr-4 pl-4 text-white">Cancel</a>
                                     <button type="submit" class="btn btn-primary mt-4 pr-4 pl-4">@if(request('id')>0) Update @else Submit @endif</button>
                                 </form>

@@ -47,7 +47,8 @@ class AboutController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $about = WebsiteAbout::findOrfail($id);
+        return view('admin.website.about.create',compact('about'));
     }
 
     /**
@@ -55,7 +56,8 @@ class AboutController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        WebsiteAbout::updateProduct($request, $id);
+        return redirect('admin/website/about/')->with('update_message','This about section (uid='.$id.') has been successfully created!!');
     }
 
     /**

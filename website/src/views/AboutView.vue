@@ -16,38 +16,8 @@
       </div>
     </div>
     <AboutAreaOfAboutPage/>
+    <VisionSectionView/>
 
-    <div class="team-area default-padding bg-gray bottom-less">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <div class="site-heading text-center">
-              <h2>VISION</h2>
-            </div>
-          </div>
-        </div>
-        <div class="team-items">
-          <div class="row">
-            <div class="single-item col-md-12 col-sm-6">
-                <div class="col-md-6">
-                  <img src="/assets/img/about/6.jpg" style="height: 500px; width: 100%" alt="Thumb">
-                </div>
-                <div class="col-md-6">
-                  <p>
-                    At ICP Distribution Company, our vision is to be the foremost and most trusted distribution partner, delivering excellence in every aspect of our operations. We aspire to set the industry standard for innovation, reliability, and customer-centricity, while contributing to the growth and success of our partners and communities.
-                    <br><br>
-                    <strong>1. Customer-Centric Excellence:</strong><br>
-                    We envision a future where every interaction with ICP Distribution Company is marked by exceptional customer service. We are committed to understanding and exceeding the unique needs of our customers, ensuring their satisfaction and success. Our goal is to build lasting relationships founded on trust, transparency, and reliability.
-
-                    <br><br><strong>2. Global Reach, Local Touch:</strong><br>
-                    We see ourselves as a global distribution powerhouse with a local touch. Our expansive reach allows us to serve clients across borders, while our localized knowledge ensures we adapt to the unique needs and cultures of the regions we operate in. We envision a world where our distribution network spans continents while maintaining the personal touch of a neighborhood business.
-                  </p>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="services-area carousel-shadow default-padding">
       <div class="container">
@@ -86,7 +56,8 @@
 <script>
 import AboutPageTitleView from "@/components/about/AboutPageTitleView";
 import AboutAreaOfAboutPage from "@/components/about/AboutAreaOfAboutPage";
+import VisionSectionView from "@/components/about/VisionSectionView";
 export default {
-  components: {AboutAreaOfAboutPage, AboutPageTitleView}
+  components: {VisionSectionView, AboutAreaOfAboutPage, AboutPageTitleView}
 }
 </script>

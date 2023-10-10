@@ -97,9 +97,16 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Products</a>
                 <ul class="dropdown-menu">
-                  <li v-for="(category, key) in categories" :key="key"><a href="services.html">{{category.name}}</a></li>
+
+                  <li class="dropdown" v-for="(category, key) in categories" :key="key">
+                    <router-link :to="{name:'category',params:{'id':category.id}}" class="dropdown-toggle" data-toggle="dropdown">{{category.name}}</router-link>
+                    <ul class="dropdown-menu">
+                      <li v-for="(sub_category, key1) in category.sub_category" :key="key1"><router-link :to="{name:'sub-category',params:{'id':sub_category.id}}">{{sub_category.name}}</router-link></li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
+
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Business Partners</a>
                 <ul class="dropdown-menu">

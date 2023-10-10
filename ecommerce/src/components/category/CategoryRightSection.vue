@@ -298,7 +298,6 @@ export default {
   created() {
     axios.get('http://127.0.0.1:8000/api/all-category-product/'+this.id).then(response => {
       this.products = response.data;
-      console.log(response.data);
     })
   }
 }

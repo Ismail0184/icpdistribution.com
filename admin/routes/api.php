@@ -39,3 +39,4 @@ Route::get('/contact',[APIController::class,'getContact']);
 Route::get('/social-media',[APIController::class,'getSocialMedia']);
 Route::get('/website/vision',[APIController::class,'getVision']);
 Route::get('/website/mission',[APIController::class,'getMission']);
+Route::get('/website/gallery',[APIController::class,'getGalleryImages']);

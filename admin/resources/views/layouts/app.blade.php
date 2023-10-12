@@ -59,9 +59,10 @@
                                 <li><a href="{{route('admin.web.blog.view')}}">Blog</a></li>
                                 <li><a href="{{route('admin.web.bp.view')}}">Business Partner </a></li>
                                 <li><a href="{{route('admin.web.about.view')}}">About us</a></li>
-                                <li><a href="{{route('admin.web.about.view')}}">Our Service</a></li>
+                                <li><a href="{{route('admin.web.service.view')}}">Our Service</a></li>
                                 <li><a href="{{route('contact')}}">Contact Us</a></li>
                                 <li><a href="{{route('socialMedia')}}">Social Media</a></li>
+                                <li><a href="{{route('admin.web.gallery.view')}}">Gallery Image</a></li>
                             </ul>
                         </li>
 

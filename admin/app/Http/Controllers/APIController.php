@@ -12,12 +12,13 @@ use App\Models\Admin\WebsiteAbout;
 use App\Models\Admin\WebsiteBlog;
 use App\Models\Admin\WebsiteBusinessPartner;
 use App\Models\Admin\WebsiteCarousel;
+use App\Models\Admin\WebsiteGallery;
 use App\Models\Admin\WebsiteSocialMedia;
 use Illuminate\Http\Request;
 
 class APIController extends Controller
 {
-    private $categories,$subCategories, $blogs, $bps, $contact, $products;
+    private $categories,$subCategories, $blogs, $bps, $contact, $products, $galleryImages;
 
     public function getAllCategory()
     {
@@ -140,6 +141,16 @@ class APIController extends Controller
         $this->mission = WebsiteAbout::findOrfail(2);
         $this->mission->image = asset($this->mission->image);
         return response()->json($this->mission);
+    }
+
+    public function getGalleryImages()
+    {
+        $this->galleryImages = WebsiteGallery::where('status',1)->get();
+        foreach ($this->galleryImages as $galleryImage)
+        {
+            $galleryImage->image = asset($galleryImage->image);
+        }
+        return response()->json($this->galleryImages);
     }
 
 }

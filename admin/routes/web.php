@@ -14,6 +14,7 @@ use App\Http\Controllers\Admin\Website\BusinessPartner;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\Website\SocialMediaController;
 use App\Http\Controllers\Admin\Website\AboutController;
+use App\Http\Controllers\Admin\website\GalleryController;
 
 
 
@@ -123,5 +124,21 @@ Route::middleware([
     Route::get('admin/website/about/edit/{id}',[AboutController::class,'edit'])->name('admin.web.about.edit');
     Route::post('admin/website/about/update/{id}',[AboutController::class,'update'])->name('admin.web.about.update');
     Route::post('admin/website/about/destroy/{id}',[AboutController::class,'destroy'])->name('admin.web.about.destroy');
+
+    //admin/website/service
+    Route::get('admin/website/service/',[AboutController::class,'index'])->name('admin.web.service.view');
+    Route::get('admin/website/service/create',[AboutController::class,'create'])->name('admin.web.service.create');
+    Route::post('admin/website/service/store',[AboutController::class,'store'])->name('admin.web.service.store');
+    Route::get('admin/website/service/edit/{id}',[AboutController::class,'edit'])->name('admin.web.service.edit');
+    Route::post('admin/website/service/update/{id}',[AboutController::class,'update'])->name('admin.web.service.update');
+    Route::post('admin/website/service/destroy/{id}',[AboutController::class,'destroy'])->name('admin.web.service.destroy');
+
+    //admin/website/gallery
+    Route::get('admin/website/gallery/',[GalleryController::class,'index'])->name('admin.web.gallery.view');
+    Route::get('admin/website/gallery/create',[GalleryController::class,'create'])->name('admin.web.gallery.create');
+    Route::post('admin/website/gallery/store',[GalleryController::class,'store'])->name('admin.web.gallery.store');
+    Route::get('admin/website/gallery/edit/{id}',[GalleryController::class,'edit'])->name('admin.web.gallery.edit');
+    Route::post('admin/website/gallery/update/{id}',[GalleryController::class,'update'])->name('admin.web.gallery.update');
+    Route::post('admin/website/gallery/destroy/{id}',[GalleryController::class,'destroy'])->name('admin.web.gallery.destroy');
 
 });

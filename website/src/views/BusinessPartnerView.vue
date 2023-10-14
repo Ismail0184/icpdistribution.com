@@ -110,7 +110,7 @@ export default {
     }
   },
   created() {
-    axios.get('http://127.0.0.1:8000/api/website/business-partner-single/'+this.id).then(response => {
+    axios.get('http://admin.icpdistribution.com/api/website/business-partner-single/'+this.id).then(response => {
       this.bp = response.data;
     })
   }

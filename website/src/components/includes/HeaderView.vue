@@ -189,16 +189,16 @@ export default {
     }
   },
   created() {
-    axios.get("http://127.0.0.1:8000/api/all-category").then(response => {
+    axios.get("http://admin.icpdistribution.com/api/all-category").then(response => {
       this.categories = response.data
     });
-    axios.get("http://127.0.0.1:8000/api/website/business-partner").then(getBusinessPartber => {
+    axios.get("http://admin.icpdistribution.com/api/website/business-partner").then(getBusinessPartber => {
       this.businessPartners = getBusinessPartber.data
     });
-    axios.get("http://127.0.0.1:8000/api/contact").then(contactResponse => {
+    axios.get("http://admin.icpdistribution.com/api/contact").then(contactResponse => {
       this.contact = contactResponse.data
     });
-    axios.get("http://127.0.0.1:8000/api/social-media").then(socialMediaData => {
+    axios.get("http://admin.icpdistribution.com/api/social-media").then(socialMediaData => {
       this.socialMedia = socialMediaData.data
     });
   }

@@ -44,7 +44,7 @@ export default {
     }
   },
   created() {
-    axios.get('http://127.0.0.1:8000/api/all-sub-category-product/'+this.id).then(response =>{
+    axios.get('http://admin.icpdistribution.com/api/all-sub-category-product/'+this.id).then(response =>{
       this.products = response.data;
     })
   }

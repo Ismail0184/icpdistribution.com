@@ -3,8 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Admin\contact;
-use App\Models\Admin\Product;
+use App\Models\Admin\Contact;
 use Illuminate\Http\Request;
 use function Psy\bin;
 

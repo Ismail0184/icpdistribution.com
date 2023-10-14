@@ -36,7 +36,7 @@ export default {
     }
   },
   created() {
-    axios.get("http://127.0.0.1:8000/api/website/mission").then(response => {
+    axios.get("http://admin.icpdistribution.com/api/website/mission").then(response => {
       this.missionSection = response.data;
     })
   }

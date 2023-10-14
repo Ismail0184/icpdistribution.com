@@ -43,7 +43,7 @@ export default {
     }
   },
   created() {
-    axios.get('http://127.0.0.1:8000/api/website/gallery').then(response => {
+    axios.get('http://admin.icpdistribution.com/api/website/gallery').then(response => {
       this.galleries = response.data
     })
   }

@@ -117,10 +117,10 @@ export default {
     }
   },
   created() {
-    axios.get("http://127.0.0.1:8000/api/contact").then(response => {
+    axios.get("http://admin.icpdistribution.com/api/contact").then(response => {
       this.contact = response.data
     })
-    axios.get("http://127.0.0.1:8000/api/social-media").then(socialMediaData => {
+    axios.get("http://admin.icpdistribution.com/api/social-media").then(socialMediaData => {
       this.socialMedia = socialMediaData.data
     });
   }

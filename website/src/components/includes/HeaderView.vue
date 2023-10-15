@@ -116,7 +116,7 @@
               <li><router-link to="/gallery">Gallery</router-link></li>
               <li><router-link to="/careers">Careers</router-link></li>
               <li><router-link to="/contact">Contact</router-link></li>
-              <li><a href="http://192.168.0.25:8081/" target="_blank">Buy Products</a></li>
+              <li><a href="http://ecommerce.icpdistribution.com/" target="_blank">Buy Products</a></li>
 
             </ul>
           </div><!-- /.navbar-collapse -->

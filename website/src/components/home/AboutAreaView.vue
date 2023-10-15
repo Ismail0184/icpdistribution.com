@@ -11,14 +11,9 @@
               </div>
             </div>
             <div class="col-md-6 info">
-              <h2>We’re Constantly Improving Our Skills to Fulfill Projects</h2>
-              <p>
-                <strong>Touch the lives of people by providing their basic needs.</strong>
-              </p>
-              <p>
-                We hope to generate in our customers the same enthusiasm and effort we put into each of the projects we develop. That is our goal and our commitment.
-              </p>
-              <a class="btn circle btn-theme effect btn-md" href="#">Discover More</a>
+              <h2>{{aboutus.section_name}}</h2>
+              <div v-html="aboutus.description"></div>
+              <router-link :to="{name:'about'}" class="btn circle btn-theme effect btn-md" href="#">Discover More</router-link>
             </div>
           </div>
         </div>
@@ -28,8 +23,19 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
-  name: "AboutAreaView"
+  name: "AboutAreaView",
+  data(){
+    return{
+      aboutus : '',
+    }
+  },
+  created() {
+    axios.get('http://admin.icpdistribution.com/api/website/who-we-are').then(response => {
+      this.aboutus = response.data
+    })
+  }
 }
 </script>
 

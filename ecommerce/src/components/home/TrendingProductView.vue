@@ -57,7 +57,7 @@ export default {
     }
   },
   created() {
-    axios.get('http://127.0.0.1:8000/api/trending-products').then( response => {
+    axios.get('http://admin.icpdistribution.com/api/trending-products').then( response => {
       this.TrendingProducts = response.data
     })
   }

@@ -14,7 +14,7 @@ use App\Http\Controllers\Admin\Website\BusinessPartner;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\Website\SocialMediaController;
 use App\Http\Controllers\Admin\Website\AboutController;
-use App\Http\Controllers\Admin\website\GalleryController;
+use App\Http\Controllers\Admin\Website\GalleryController;
 
 
 

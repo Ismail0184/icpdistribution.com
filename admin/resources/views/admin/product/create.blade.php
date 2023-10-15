@@ -107,8 +107,8 @@
                                     <div class="form-group">
                                         <label class="col-form-label">Show in Trending</label>
                                         <select class="form-control" name="show_in_trending">
-                                            <option value="1" @if($product->show_in_trending=='1') selected @endif>On</option>
-                                            <option value="0" @if($product->show_in_trending=='0') selected @endif>Off</option>
+                                            <option value="1" @if(request('id')>0) @if($product->show_in_trending=='1') selected @endif @endif>On</option>
+                                            <option value="0" @if(request('id')>0) @if($product->show_in_trending=='0') selected @endif @endif>Off</option>
                                         </select>
                                     </div>
 

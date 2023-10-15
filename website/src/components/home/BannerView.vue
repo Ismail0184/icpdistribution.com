@@ -13,9 +13,7 @@
                     <div class="col-md-10 col-md-offset-1">
                       <div class="content">
                         <h2 data-animation="animated slideInDown" v-html="carouselac.headline"></h2>
-                        <p data-animation="animated slideInLeft">
-                          Arrived Size now easy eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may purse means few blind.
-                        </p>
+                        <p data-animation="animated slideInLeft" v-html="carouselac.details"></p>
                         <a data-animation="animated slideInUp" class="btn circle btn-light border btn-md" href="#">Our Services</a>
                       </div>
                     </div>
@@ -25,7 +23,7 @@
             </div>
           </div>
           <div class="item" v-for="(carousel,key) in carousels" :key="key">
-            <div class="slider-thumb bg-cover" style="background-image: url(/assets/img/banner/3.jpg);"></div>
+            <img :src="carousel.image" class="slider-thumb bg-cover">
             <div class="box-table shadow dark">
               <div class="box-cell">
                 <div class="container">

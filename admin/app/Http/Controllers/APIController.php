@@ -18,7 +18,7 @@ use Illuminate\Http\Request;
 
 class APIController extends Controller
 {
-    private $categories,$subCategories, $blogs, $bps, $contact, $products, $galleryImages;
+    private $categories,$subCategories, $blogs, $bps, $contact, $products, $galleryImages, $whoWeAre, $carousels;
 
     public function getAllCategory()
     {
@@ -60,7 +60,12 @@ class APIController extends Controller
     }
     public function getCarousel()
     {
-        return response()->json(WebsiteCarousel::where('status',1)->where('position','inactive')->orderBy('serial','asc')->get());
+        $this->carousels = WebsiteCarousel::where('status',1)->where('position','inactive')->orderBy('serial','asc')->get();
+        foreach ($this->carousels as $carousel)
+        {
+            $carousel->image     = asset($carousel->image);
+        }
+        return response()->json($this->carousels);
     }
 
     public function getCarouselEcommerce()
@@ -141,6 +146,13 @@ class APIController extends Controller
         $this->mission = WebsiteAbout::findOrfail(2);
         $this->mission->image = asset($this->mission->image);
         return response()->json($this->mission);
+    }
+
+    public function getWhoWeAre()
+    {
+        $this->whoWeAre = WebsiteAbout::findOrfail(3);
+        $this->whoWeAre->image = asset($this->whoWeAre->image);
+        return response()->json($this->whoWeAre);
     }
 
     public function getGalleryImages()

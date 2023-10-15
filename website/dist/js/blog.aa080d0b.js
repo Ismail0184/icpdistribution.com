@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkismail"]=self["webpackChunkismail"]||[]).push([[239],{6349:function(n,e,i){i.r(e),i.d(e,{default:function(){return l}});var t=i(3396);function r(n,e,i,r,s,u){return(0,t.wg)(),(0,t.iD)("h1",null,"this is test")}var s={name:"BlogView"},u=i(89);const a=(0,u.Z)(s,[["render",r]]);var l=a}}]);
-//# sourceMappingURL=blog.aa080d0b.js.map

@@ -272,7 +272,7 @@ export default {
     }
   },
   created() {
-    axios.get("http://127.0.0.1:8000/api/all-category").then(response => {
+    axios.get("http://admin.icpdistribution.com/api/all-category").then(response => {
       this.categories = response.data;
     })
   }

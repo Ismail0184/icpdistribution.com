@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62c727a9-ffd8-4554-abcc-325c5d03fc5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/website/node_modules/.cache/babel-loader/3d6bdf60eeb1d4e615364ebf4ddbf1704199d7a14873895a2be29bd27b4239a1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/node_modules/.cache/babel-loader/635a1148865fc01462bb1a4df12fcf4ced7f30c4136dde61ff09f37860b5869f.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/node_modules/.cache/babel-loader/862d5932d9c0f27f95bb9b2d89ef938a896e2938b74239a262fd8eb5d87ea93a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/node_modules/.cache/babel-loader/ae6a1b67151f3d0c7d3d2a942e8a1e7b934f9619d95c78777b4754e493f96d8d.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/src/components/home/OurServiceHomeView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/resources/views/admin/product/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/resources/views/admin/product/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/category/CategoryRightSection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/category/CategoryRightSection.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/home/FeaturedCategoriesView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/home/FeaturedCategoriesView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/home/HeroAreaView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/home/HeroAreaView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/home/TrendingProductView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/home/TrendingProductView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce/src/components/includes/HeaderView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce/src/components/includes/HeaderView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/dist.zip" beforeDir="false" afterPath="$PROJECT_DIR$/website/dist.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/dist/js/app.291e04ad.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/dist/js/app.291e04ad.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/dist/js/home.ff1466ce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/dist/js/home.ff1466ce.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/node_modules/.cache/eslint/56c2a6ea.json" beforeDir="false" afterPath="$PROJECT_DIR$/website/node_modules/.cache/eslint/56c2a6ea.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/node_modules/.cache/eslint/5e0a6baf.json" beforeDir="false" afterPath="$PROJECT_DIR$/website/node_modules/.cache/eslint/5e0a6baf.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/home/AboutAreaView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/home/AboutAreaView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/home/BannerView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/home/BannerView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/components/includes/HeaderView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/includes/HeaderView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/views/HomeView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +218,9 @@
       <workItem from="1697083119217" duration="12778000" />
       <workItem from="1697260798918" duration="8243000" />
       <workItem from="1697343350125" duration="7867000" />
-      <workItem from="1697363698428" duration="1243000" />
+      <workItem from="1697363698428" duration="1861000" />
+      <workItem from="1697435675440" duration="1217000" />
+      <workItem from="1697606453988" duration="426000" />
     </task>
     <servers />
   </component>

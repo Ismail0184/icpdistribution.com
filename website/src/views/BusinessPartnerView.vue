@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12">
-            <h1>Business Partner</h1>
+            <h1>{{bp.partner_name}}</h1>
           </div>
         </div>
       </div>

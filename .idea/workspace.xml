@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62c727a9-ffd8-4554-abcc-325c5d03fc5a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/website/src/components/product/ProductDetailsView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/src/views/ProductView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/app/Http/Controllers/APIController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/node_modules/.cache/eslint/56c2a6ea.json" beforeDir="false" afterPath="$PROJECT_DIR$/website/node_modules/.cache/eslint/56c2a6ea.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/node_modules/.cache/eslint/5e0a6baf.json" beforeDir="false" afterPath="$PROJECT_DIR$/website/node_modules/.cache/eslint/5e0a6baf.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/components/category/CategoryProductView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/category/CategoryProductView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/components/subCategory/SubCategoryProductView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/components/subCategory/SubCategoryProductView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/src/views/BusinessPartnerView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/website/src/views/BusinessPartnerView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,6 +231,9 @@
       <workItem from="1697363698428" duration="1861000" />
       <workItem from="1697435675440" duration="1217000" />
       <workItem from="1697606453988" duration="426000" />
+      <workItem from="1697628172741" duration="1085000" />
+      <workItem from="1697713942519" duration="1246000" />
+      <workItem from="1697864004520" duration="7794000" />
     </task>
     <servers />
   </component>

@@ -18,7 +18,7 @@ use Illuminate\Http\Request;
 
 class APIController extends Controller
 {
-    private $categories,$subCategories, $blogs, $bps, $contact, $products, $galleryImages, $whoWeAre, $carousels;
+    private $categories,$subCategories, $blogs, $bps, $contact, $products, $galleryImages, $whoWeAre, $carousels, $product;
 
     public function getAllCategory()
     {
@@ -163,6 +163,13 @@ class APIController extends Controller
             $galleryImage->image = asset($galleryImage->image);
         }
         return response()->json($this->galleryImages);
+    }
+
+    public function getProductDetails($id)
+    {
+        $this->product = Product::findOrfail($id);
+        $this->product->image = asset($this->product->image);
+        return response()->json($this->product);
     }
 
 }

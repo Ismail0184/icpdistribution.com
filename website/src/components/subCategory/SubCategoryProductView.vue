@@ -18,7 +18,7 @@
                           <p>{{product.name}}</p>
                         </div>
                         <div class="right">
-                          <a href="/assets/img/portfolio/1.jpg" class="item popup-link"><i class="fa fa-plus"></i></a>
+                          <router-link :to="{name:'product'}" class="item popup-link"><i class="fa fa-plus"></i></router-link>
                         </div>
                       </div>
                     </div>

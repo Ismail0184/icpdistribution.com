@@ -14,11 +14,11 @@
                       </div>
                       <div class="info">
                         <div class="left">
-                          <h4><a href="#">{{product.category.name}}</a></h4>
+                          <h4><router-link :to="{name:'product',params:{'id':product.id}}">{{product.category.name}}</router-link></h4>
                           <p>{{product.name}}</p>
                         </div>
                         <div class="right">
-                          <router-link :to="{name:'product'}" class="item popup-link"><i class="fa fa-plus"></i></router-link>
+                          <router-link :to="{name:'product',params:{'id':product.id}}" class="item popup-link"><i class="fa fa-plus"></i></router-link>
                         </div>
                       </div>
                     </div>

@@ -45,7 +45,7 @@
                 <h4>Categories</h4>
               </div>
               <ul>
-                <li v-for="(category,key) in categories" :key="key"><a href="#">{{category.name}}</a></li>
+                <li v-for="(category,key) in categories" :key="key"><router-link :to="{name:'category',params:{'id':category.id}}">{{category.name}}</router-link></li>
               </ul>
             </div>
             <!-- End Single Item -->
